@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		71D7B6CF842AF762F201C4DC /* Pods-NEKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEKit_Example.release.xcconfig"; path = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		73DF1B8A502E09B12DE716BA /* NEKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NEKit.podspec; path = ../NEKit.podspec; sourceTree = "<group>"; };
+		73DF1B8A502E09B12DE716BA /* NEKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NEKit.podspec; path = ../NEKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		948E3EAD5C49B8579AB74BAF /* Pods_NEKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9764FA1405DDDA584B33DF35 /* Pods-NEKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D245509F86D94F23F8D4F5A1 /* Pods-NEKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,11 +271,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDB-Swift/MMDB_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/NEKit/NEKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Yaml/Yaml.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDB_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NEKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yaml.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -7,26 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		493F91645BC27488D152BCACA4134EE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		496483E03A40A2B0155CD6DC1E8769CD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7043F2A3BD96514B1D75C57000D2A7 /* ReplaceMe.swift */; };
+		078ED1016E73C05590143BEC55B08A5B /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05253862BBD6216975A1D0FFC39ED688 /* Yaml.framework */; };
+		089CD4AD860A3822BE01537D62C067D3 /* Pods-NEKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F7EBD38D451727F7CD0606AFB49CBF /* Pods-NEKit_Example-dummy.m */; };
+		0AB272514B0011B6C3EDF06B4C59CD6F /* YAMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408A6D2E314480CA8963BA0AB19D154 /* YAMLTokenizer.swift */; };
+		0ADD7068995EA4AC8E386F6508F5D77F /* crypto_int32.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5B7B13552827277E8BC7B1C5F83CCA /* crypto_int32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6F3394F96D7AD385CCB0CA13C828F5 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 1360E0BD69105A6498F8AEE5BD1B7D3B /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CFD4BE7BE289FCF188E4A3271FB0E20 /* crypto_box.h in Headers */ = {isa = PBXBuildFile; fileRef = 3733F0E3A769D1AA8804D48CE82AF681 /* crypto_box.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D8D2A536F74856069B5D5A56CB4652D /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 82248E3FA36D0B5F3CDF829FE8555961 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA2AC947A4A652A251C8E312F760B65 /* Security.framework */; };
+		101465200B9E75566717D74C47C8C23C /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BBDEC9D77BE1AC33A8E3005D3887C7 /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1437039738B878B0C97ABB5B3EFC8AFC /* crypto_aead_chacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 0053D66DE5DF44F2288F58F45450D175 /* crypto_aead_chacha20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		163B67D435A738F85DEEE54DAD660181 /* crypto_generichash.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FFACD18E21A9863A33C4344A768EAA /* crypto_generichash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18155923D8CF2E34A1ABDD300E2646B2 /* crypto_shorthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED030C3F0B51D22B38F23ABC4CAC9A3 /* crypto_shorthash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		191F4AAC0DAE26F7D47E6F7C82722A1A /* crypto_uint16.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B3382072466FC8FFD2FA8BB9A69739 /* crypto_uint16.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19CABC072D5AAE8385D4FC87340BE213 /* crypto_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1F113A4F723045017BCA11022B9213 /* crypto_stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C69814D109D97A28881862F99829B26 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1508606596D5619210022E4FE54E2 /* CLIColor.m */; };
+		1CAD7FB845B089D78EC3782D1399FDB9 /* crypto_stream_xsalsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8BA1CD8E32DBDC8DD54429FB19C505 /* crypto_stream_xsalsa20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F292B5410B16DBF60D1F47A48216622 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7E9774EEB350FD102B440476BE79B /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAC9FF0C2BB2467EB23A5600790958C /* CFNetwork.framework */; };
+		218EED5A407F38226F8D22C909B2CCEF /* Yaml-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EBDB299EB996048AEBB70EC782228DC /* Yaml-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2836A6951AA9D8397D5C182E2D28567D /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F91F8D39C8B34128821DB237551F8E4 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1F2B8A1110F0D393B5115772DE7F26 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B04E14AFE0E3C3BEE02A76B2BA959CB /* crypto_core_hchacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 43ACCE880DC75F11622EB70AFA73B628 /* crypto_core_hchacha20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F07908B39571E7D260552A01170B8C1 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11969ADDF9E4B4B0292A27F8AB9F9F34 /* CocoaAsyncSocket.framework */; };
+		3106E95AF85BF6B837EB1D16DDEEE264 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7573C31ED5408BE0F1F5C357DA9CA192 /* NetworkExtension.framework */; };
+		31C0267784D9EE8C4BA5C871206617AF /* libsodium-iOS.a in Sources */ = {isa = PBXBuildFile; fileRef = 45A2DCD504CB78DCE76DD3D5ED602D91 /* libsodium-iOS.a */; };
+		384DAA06B48CBA1809AE10ED2A947F88 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0186253426E09A7B3F69F0DFA500E83F /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD153ADADF540FEBA3098A4EA6CFDD7 /* crypto_shorthash_siphash24.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D58956F0F61CF64248AB0643C040DBE /* crypto_shorthash_siphash24.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1CD49CCD117F90075A09387B6F60A9 /* crypto_onetimeauth.h in Headers */ = {isa = PBXBuildFile; fileRef = B408B0D553BEA927ADAF80211A2C5C72 /* crypto_onetimeauth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E7ABBBD41788B7C28A8B0DF05FB9502 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B0D9AE7217C5E364EFA35BD2714513E /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EFB8F7DD73F9DD10EF4C7355E6E06F9 /* DDFileLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBC07B42A0AA834D405C4599720DCDE /* DDFileLogger+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3F0BE1D3A50BA6B008A7DC81BF5FE4EC /* crypto_auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5F8E22E26A02DF38BB7FD0D1D7A4FC /* crypto_auth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FB3B73A5ADB822DDD7C4113E351A8AE /* crypto_uint8.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E414AF4A0909A2B7D0C6CF74BAE591 /* crypto_uint8.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = A751AD62522FD18F1088AC891E8ABBA5 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415FA81FF41E8307B4E5CA365BA2281C /* crypto_stream_chacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 212B4291A4B06A261A86A0874E104E1D /* crypto_stream_chacha20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43601DAA266A0A83F75A00F8B2FD0DAD /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40F291338F3EBEEF7A72C5CF07AF6B /* DDDispatchQueueLogFormatter.m */; };
+		46AF50CC0110611759E575A3F0BA6E1C /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BDDA20A831FD3E66395CF7809C91E7 /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BDAF1983567C9A8E9BD6168455D1ED /* crypto_stream_salsa2012.h in Headers */ = {isa = PBXBuildFile; fileRef = EF90D4E7E56207A78BFD1F02C2C2175C /* crypto_stream_salsa2012.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4784AB11E25A4876849EF7DD4B38D66D /* crypto_uint64.h in Headers */ = {isa = PBXBuildFile; fileRef = F7791804F5EAF6B31DB96374A9267DCF /* crypto_uint64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47CBE56D1319C9AEC3842C6ECF65173B /* crypto_stream_salsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F175A91953949A0055A01841CE0CC9 /* crypto_stream_salsa20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BC7F88AEF0F04B287A1EB6B9E2F589E /* maxminddb_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 693550398F9B76B14AA2A6ADF5DA36F9 /* maxminddb_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C35CD1A73E44411D14567D7982D82CA /* Pods-NEKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EEBAEF56594C25D84F21B2B55CC5224 /* Pods-NEKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DCB98A6BFD5FFE896F420B899A02E44 /* crypto_uint32.h in Headers */ = {isa = PBXBuildFile; fileRef = ADBC52682B37A73189358553E47DD7E7 /* crypto_uint32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59869DA5EA8366EFB59B7E75886C7631 /* MMDB-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6532528BA1EADE473FBC8876F03DCA /* MMDB-Swift-dummy.m */; };
+		5B273EF997E5A49C50562DFDD5233275 /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 248487F5D4E74E18BD4F631EBEFD744D /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F6A094A7A081926A4911132EE9BE293 /* Pods-NEKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D805E61373ED7069EEC83A8A1A47CC /* Pods-NEKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AB06704F3B634DF796D22F795DA24B2 /* NEKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B2C273DBCF4B563CF95E5402A1332F /* NEKit-dummy.m */; };
-		7F87903BF60F4FF6FFE13024AE53B322 /* NEKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA84189F551A65D89F090DB18833300 /* NEKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B746A0AB443096F2DDE91111167EF7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CC1108D833A776EAD34792E801441898 /* Pods-NEKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F7EBD38D451727F7CD0606AFB49CBF /* Pods-NEKit_Example-dummy.m */; };
-		D2FE42429A3CA50B4F8B98DD7389DAB4 /* Pods-NEKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EEBAEF56594C25D84F21B2B55CC5224 /* Pods-NEKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62103438E198BF017F78C906CB94269E /* maxminddb.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D71FED2C916CB778D4802A768F3E765 /* maxminddb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64940EB3E7709ECEAF5856334533B47B /* crypto_scalarmult_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 6305670D25C2AEDE80E3D6868343A6CB /* crypto_scalarmult_curve25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		657035B7971A9B5EAA8AA911A218697A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		672E7014A1D9F088F9C3952901BBA3B7 /* crypto_stream_salsa208.h in Headers */ = {isa = PBXBuildFile; fileRef = D05766534BB8D952592B1F48516FA91A /* crypto_stream_salsa208.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68458B82921575865BFAB89E6FB9C80F /* crypto_secretbox_xsalsa20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 260C73D6ED9D7F91BC1EBCA99BD5E560 /* crypto_secretbox_xsalsa20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8168FF961F0B812704EA6C7720072404 /* CocoaAsyncSocket-dummy.m */; };
+		6DE76DC8E6BE1E82B504607563A48362 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6E1E4B018DDBA3C2B0003D5834B43D /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		701144BE719973A7733BC765635EF7FB /* libsodium-macOS.a in Sources */ = {isa = PBXBuildFile; fileRef = 74487E9F08214BC5012836314E5C5E0E /* libsodium-macOS.a */; };
+		729A06B335528881087B4DF0E88E3956 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1DBE816752C94F2BA3D29A75947334 /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72D2FE6ACE4A1FD3DD9AD6365644A8ED /* YAMLRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7334E83D3240B19ED7EA3725B267CC3 /* YAMLRegex.swift */; };
+		72E20316771F46D3BC2C6195EE3D6C2E /* YAMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD8907253C73B5F9ADD21972F0A512 /* YAMLParser.swift */; };
+		73C0D9FEDFBA056A0F01C0436F6315B4 /* crypto_pwhash_scryptsalsa208sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 667D831D2243D955A600FA5C451657D6 /* crypto_pwhash_scryptsalsa208sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		772DE635D6C3DD1FC85FDE15A0E73C16 /* crypto_stream_aes128ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A77E070D61F5DD1DD5CA5B5C88E428 /* crypto_stream_aes128ctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77BAF52973EDCED65930ECC9CA457909 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A158ABD6495EE0226767AFA3A70EFF2E /* DDFileLogger.m */; };
+		781CBFCE59DBEB25EAFC976475D603B9 /* maxminddb-compat-util.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1910BA0269A88FA7FE9C14C5EF47D8 /* maxminddb-compat-util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7967FD59CDA64B71214B2B7086A2D826 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = A792D141E25D314B309FA515BCD9EA4C /* DDASLLogCapture.m */; };
+		7A1E3BA0138C9BE4A1C3596C79BC6578 /* crypto_core_salsa2012.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF808B0C5684200247B9061490A07F1 /* crypto_core_salsa2012.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E9CBBBCCF63562059972A93C224F804 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F15EBB576A288ED9A3D6B5E10A3543B1 /* DDTTYLogger.m */; };
+		7F1D540538D224C64E9AE0701EA15052 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = D6460F2C5E4CFE975E5D58E5D02C3589 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8026F45B62D73A46569E5E30819A2279 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE21703AC9973185942B2B590C88EB4 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80BED9AF526FAC472CBC51BA4E8C44C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		846FEF6309742F499DC2902F9ED4732F /* maxminddb.c in Sources */ = {isa = PBXBuildFile; fileRef = 96A223D4DFDAC7E4EE413DDFBC70C7EA /* maxminddb.c */; };
+		849AACE59FA5E06B412A553AACE0F8C4 /* crypto_core_salsa208.h in Headers */ = {isa = PBXBuildFile; fileRef = 16AF4D78682274DAF2C67CECFACF84FE /* crypto_core_salsa208.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86CD3B9DCB37ED5FB5FBEBBC6F872245 /* randombytes_salsa20_random.h in Headers */ = {isa = PBXBuildFile; fileRef = B57807946736F427D511FCCC3A81E1B0 /* randombytes_salsa20_random.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A1858C742D8641F7162A2707963984C /* crypto_scalarmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D440AC924DDB6AB7F51A939E2D116F /* crypto_scalarmult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BAC4F8772AFC15F4D4E1536837FB17E /* crypto_int64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F04A88F233D280763B1F03CDB05FE75 /* crypto_int64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D18099C907F47B45C6C6CB8543E72F9 /* NEKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C9B152058428E99E25992DB7BA420 /* NEKit-dummy.m */; };
+		8D45ACABAC0616FAB7BE129AA3204917 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2DA65EFF7F12AB8DEDC9B70352F162 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F11735D0E7594135FEB8AAA2A735466 /* crypto_auth_hmacsha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 71908842E5D688F0CA6BBBF100B2F18F /* crypto_auth_hmacsha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		911F408FC3732C0CB9CC710EBE643C1D /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B3C10806B84EE675BEFCACB1407B4F /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92097270F4BD13B79EC7ECD812EF64E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		9585C20EED98135C0A236B6F94075D9C /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5282C96ED79340C63BB8934AAD6E3E /* crypto_hash_sha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998663B187F385BC1BCC2859E19948A9 /* crypto_auth_hmacsha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 172B7D5FE8FBD51D7BBAD43984969AA9 /* crypto_auth_hmacsha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B365DCC9DFCCC6D85BC7CC26E29F051 /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AA51FF57FD4F3BAE0388F6F9C29938 /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C6E804E7D8101D2301CE6B98F03DE45 /* crypto_sign_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B75668C7D41AC468C5E9A13A66CB9E /* crypto_sign_ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D64946B73901B783770885B34728DA2 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA7B064427996A6968609F7FCCB6D41 /* DDOSLogger.m */; };
+		9ED42DE839492BDBF802CE805BF568BC /* crypto_pwhash_argon2i.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CA30BC8FDBC439AF60DCAEB5AB3438 /* crypto_pwhash_argon2i.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F9069B4F9A0EDB0D0A85A8874A726A0 /* crypto_hash.h in Headers */ = {isa = PBXBuildFile; fileRef = F660DC53F3F2D60300DA507E83013EAB /* crypto_hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03E9131013675B96260F5630BBA7C3E /* crypto_pwhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B47C23F1D4890034AF3463573B93950 /* crypto_pwhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A10DA2A0B5B9D092C38422E87DBC482B /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD37684C40FF32A5B013A4C554C3726 /* CocoaLumberjack.framework */; };
+		A18D1DE48B068CE819C85F5BF54CDC5F /* crypto_verify_16.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E471EA2541CAA214C69751CBE474F72 /* crypto_verify_16.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A43702C55D742DC9CA2F7A72BCEEB64E /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = D322A5EE03182B11A501FB1292EE17BB /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A73F28040FC0081FE484E7F3C9149956 /* MMDB_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD52B3D83715941EF8C23FE4CD2658C /* MMDB_Swift.framework */; };
+		A8CA6054EC1338F05AC5C7A84127874A /* maxminddb_unions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7DF284367FCC2678968BDC44049963C /* maxminddb_unions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92CF0186E09A47FEDB5FDD8BED2253F /* crypto_box_curve25519xsalsa20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A035AAC21CA03F93C40EB8E0B9D4DA7 /* crypto_box_curve25519xsalsa20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9AF061AE8AE98F1F099287229EAD1AB /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3B8136E6DEB6A327F3474FD4F183AD /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA38F703C132D5D13E943032D989B7A /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = DFDF9B594186D4037C7F8A7CEF17DA66 /* utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6FCF12333CC6DBAD896357DBF0C24C /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E6270DC9E6D7BF8B76BD957B73ED36 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B20FEE9E3EFDBF387068A9AD8CBE6FC1 /* crypto_verify_32.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FE69C267F669735D937DFD5729760B /* crypto_verify_32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6339A6886F35C46786C8743064A7893 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4332BAD4FD1704C9A2B8EFF9E4EFEA /* DDMultiFormatter.m */; };
+		B6C226A854CE04BF2060350A0868F705 /* randombytes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3A08DE0041FA4F64116377081A3A74 /* randombytes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B718DE87CBEB6F3571E6F57B9D6624F9 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB2F7F1FE4E4E3205523C977349789D /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7429BD245957250863FD5BE1969EA04 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A49A19D4645229D00BC826FA3183D4 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA12DCDCB0A59C84C81E4E41DBDD0BC0 /* YAMLOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116607A56C87139D48973B33BA0E996 /* YAMLOperators.swift */; };
+		BB9B358A52C1B10E5F070C1FF510BD00 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC02629051F6ABE05A95054830B73D9 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA5330529B561E2401025C72D9DC8DF /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = A76477C20E7D652748B6924B2DE74E38 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD85D48B0030454BF097117510DF7976 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B5F6F726164815066DF12E11EE99A /* DDFileLogger+Buffering.m */; };
+		BEF4EBB577934FFA17716D47F8D5B986 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 957310E0DD2FEF6F1040CC065E166833 /* DDASLLogger.m */; };
+		BF0E4454B28437897BC092AE02CD0C13 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A93362EBABAB265C59ACB325D6F97892 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BF3B7EDD4EFCB417139F8A134F7AA0A7 /* crypto_auth_hmacsha512256.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DBAF31A0A3CB3BFB4DEFDCC5CBCFDA /* crypto_auth_hmacsha512256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C40F24A66272E2930CDC0798B9806D55 /* SafeDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DF4435F26F20A0D287F09DEBFA8545 /* SafeDict.swift */; };
+		C850C5D3C65957F0C0082BB29EB326DB /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F606772390D0CD5C4A09CA6B88245662 /* CocoaLumberjack-dummy.m */; };
+		C86D6A1F0E627DB147962EF11D460AE8 /* MMDB-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 488C38FCF3E682A63A2C735198666DED /* MMDB-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CADD00BA489C6D013C8248D2014DCD80 /* crypto_verify_64.h in Headers */ = {isa = PBXBuildFile; fileRef = AB59C7B308FE63B2F355D153C4F55791 /* crypto_verify_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCD229D49F54F8FF66E1595632AD7BB6 /* crypto_secretbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 80435CFEB8E0AF0DE6937AF939164378 /* crypto_secretbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3F05AF125FB5DB8F998D116E4513DD /* sodium-lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9B63EAE760DD1A98352239F86A955 /* sodium-lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D27B6368CBC3605D4B68283D7AB679EA /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 87ABF2CEF7167F7648DE2DF073F98FF4 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3698BA8C86620F799ED5920DE3909CB /* Pods-NEKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1D4582256608AC14ADC15BF9271B1 /* Pods-NEKit_Tests-dummy.m */; };
-		F18035D71B52743CC20572BDC829DD48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D370716608CD404EDA6487F5264002FD /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B0356CDEFB1A58F77B68EC2FD884883B /* DDAbstractDatabaseLogger.m */; };
+		D3BE446C5A2EDF35FA16AB5FF5069456 /* randombytes_sysrandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BDFA3D73BAFAB9C0E14E9B610D67E9 /* randombytes_sysrandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3C0FC56A5B0E101AF611843BFD469BC /* runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A2E1ADDD3F37F403A8065521028A15 /* runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB2ACDDB64F1BBA457089FFCA232D533 /* NEKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC896DB0681722EDABB80AC6D5A54A28 /* NEKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB561750F6030F814BABE2694D2632F7 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB1CA787D5220BCC7C47488F029F3D /* DDContextFilterLogFormatter.m */; };
+		DDDFD72CA15D2CFDFF944851132FC95D /* crypto_onetimeauth_poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F17785C7290774B5A90D6B702F718C /* crypto_onetimeauth_poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF08EA26EDD20EF10FA6F0919C70418E /* crypto_generichash_blake2b.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C0DC5CD342C28ECF8A03801D3819C7 /* crypto_generichash_blake2b.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB96EF9C90333BB8094832EB948D6D0 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E13316CCB607116E99236E7DECB98F46 /* data-pool.c in Sources */ = {isa = PBXBuildFile; fileRef = 16DF43CB6B86C118A3C606BA09E96D25 /* data-pool.c */; };
+		E38B9E6C920456080C1391926FC7F6D3 /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4E44FFEA11C7005ED8FBFA44739C9 /* DDLoggerNames.m */; };
+		E4CD78139B773B689B622CBB70662661 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		E5BB2D1BAD37E6E20D6B198A22E51BD6 /* data-pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 731BBD4CBE8EC20401830A87A37A6469 /* data-pool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FCE10B446CC23F80E4D8AF4DDBDCB2 /* MMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCB84FBB08D4F82066982EA1135580E /* MMDB.swift */; };
+		E731331ADA81C1D32A4D289AEE0B0F21 /* crypto_sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A106547580944AD6892772C7997756 /* crypto_sign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7699167AFFD674856818DE5E31BB105 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD2CA6058AAF740193AEAA175DA35A /* Resolver.swift */; };
+		E9804EB8B05C84A2AE0A5D5C7427FCFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		EA20E2A0714632D5A878BDE36D99B082 /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0FB8A72789345532EBB7223B9846C5 /* CLIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC79C1A05D55E06F6DF37EE11BECDD0B /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DD2CC74EAACC56916759EB7FCEC014 /* DDLog.m */; };
+		EEE660E6A2B5B8F11244E7F9A6267BA6 /* Yaml-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B80184172F20B58E8C9189E2E8DE1C0C /* Yaml-dummy.m */; };
+		F18035D71B52743CC20572BDC829DD48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */; };
+		F2B6B7EA1E134432BAD5BFBA14F0E69A /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 785436CD01C14423A0712ED7F84F533B /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50171F1ABFFBB6D694E7D035BFAFF90 /* crypto_core_hsalsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A8CDD4040C83E96D57733192487C40 /* crypto_core_hsalsa20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F636FFD0E87F06A2C0E24639C578BE29 /* crypto_core_salsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = 88153B99F7A8DDD6982DE8BAD4CEA446 /* crypto_core_salsa20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DB2926D0F04911CDCD06FB4D7EF397 /* crypto_hash_sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FE4BB0105CB8B4310DB3304B3F738A /* crypto_hash_sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9354819CABF7CC6433015E076C54244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE0FB4E21185C18B22A6D1842909F9 /* UIKit.framework */; };
+		F990CE90B11FAC805BE034BB3295B5E1 /* YAMLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B938F4BD745F6B8D96A8E0DC00C214BE /* YAMLResult.swift */; };
+		FCBA91C96765A10FB68A953EA4ABC30B /* Yaml.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3FBF5C2D1B37451B618D915B81F72 /* Yaml.swift */; };
+		FFDC25C42979649DAC1FEB8C8C95C36B /* maxminddb_unions.c in Sources */ = {isa = PBXBuildFile; fileRef = 887B03A2E1CBAD9CD48F01E01342EE31 /* maxminddb_unions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		082C1599E5AAB43DEA7E4E7CEA476886 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66BBD07BFD1980FD6B7C563656D9DC20;
-			remoteInfo = NEKit;
-		};
 		113CB461D497399061EC7C3E25CE8729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -34,45 +159,270 @@
 			remoteGlobalIDString = 16B038CBC3D463AD9657E5FFDD09204F;
 			remoteInfo = "Pods-NEKit_Example";
 		};
+		136074688A6D8D6F227BA77ABF2275CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40573E405040AE779B355F77177BC201;
+			remoteInfo = Yaml;
+		};
+		1E0DC8D77E9FAC53A53A201E8FCC00D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		3D818293658A2F6907E09D67C9737CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		7467723864315E5D1AAD50BF1116319B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66BBD07BFD1980FD6B7C563656D9DC20;
+			remoteInfo = NEKit;
+		};
+		8BCBD819E2793C8CADE22D7B9E580CC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		C38FA1889E98E7CAEE2F4A2B8E0E796A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40573E405040AE779B355F77177BC201;
+			remoteInfo = Yaml;
+		};
+		C522E47AF55811D878C6ECA21167AEB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591ECABC074328ACF141770FC8D8606F;
+			remoteInfo = "MMDB-Swift";
+		};
+		D691A21A976C14027AEAC300554780F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		D93E966A2E7F06C79BB44131B548224F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591ECABC074328ACF141770FC8D8606F;
+			remoteInfo = "MMDB-Swift";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0053D66DE5DF44F2288F58F45450D175 /* crypto_aead_chacha20poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_aead_chacha20poly1305.h; sourceTree = "<group>"; };
+		0186253426E09A7B3F69F0DFA500E83F /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		0232582202D5B0DD8F65FA4549650EE7 /* Yaml-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Yaml-Info.plist"; sourceTree = "<group>"; };
+		0455DA2572268642C81268FDCF662054 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		04F17785C7290774B5A90D6B702F718C /* crypto_onetimeauth_poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_onetimeauth_poly1305.h; sourceTree = "<group>"; };
+		05253862BBD6216975A1D0FFC39ED688 /* Yaml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yaml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05DF4435F26F20A0D287F09DEBFA8545 /* SafeDict.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SafeDict.swift; sourceTree = "<group>"; };
+		0A035AAC21CA03F93C40EB8E0B9D4DA7 /* crypto_box_curve25519xsalsa20poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_box_curve25519xsalsa20poly1305.h; sourceTree = "<group>"; };
+		0B5FA6F0FD6894169031B6F7AE075431 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		0DE0F76A47F067A9544BD92A8D440C1C /* Pods-NEKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		0F92A9E37612E2C43D24151EDEABD588 /* Pods_NEKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF282EDB765E1FCC0A454CF15F72328 /* MMDB-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMDB-Swift-Info.plist"; sourceTree = "<group>"; };
+		0F92A9E37612E2C43D24151EDEABD588 /* Pods_NEKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NEKit_Example.framework; path = "Pods-NEKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1116607A56C87139D48973B33BA0E996 /* YAMLOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLOperators.swift; path = Sources/Yaml/YAMLOperators.swift; sourceTree = "<group>"; };
+		11969ADDF9E4B4B0292A27F8AB9F9F34 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11CC5728E7AD1EDC6BA7875B2ECAE6C4 /* Yaml.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Yaml.modulemap; sourceTree = "<group>"; };
+		1360E0BD69105A6498F8AEE5BD1B7D3B /* export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
 		1374184CF2FC7706EFD4934E76D40550 /* Pods-NEKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1482803FE4D07538304543F478B1B791 /* NEKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NEKit.release.xcconfig; sourceTree = "<group>"; };
+		13AD2CA6058AAF740193AEAA175DA35A /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		16AF4D78682274DAF2C67CECFACF84FE /* crypto_core_salsa208.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa208.h; sourceTree = "<group>"; };
+		16DF43CB6B86C118A3C606BA09E96D25 /* data-pool.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "data-pool.c"; path = "Sources/libmaxminddb/data-pool.c"; sourceTree = "<group>"; };
+		172B7D5FE8FBD51D7BBAD43984969AA9 /* crypto_auth_hmacsha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_auth_hmacsha256.h; sourceTree = "<group>"; };
+		18CD8907253C73B5F9ADD21972F0A512 /* YAMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLParser.swift; path = Sources/Yaml/YAMLParser.swift; sourceTree = "<group>"; };
+		199A202B6824127544F3D80A2BED6188 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		1BD52B3D83715941EF8C23FE4CD2658C /* MMDB_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMDB_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5282C96ED79340C63BB8934AAD6E3E /* crypto_hash_sha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_hash_sha512.h; sourceTree = "<group>"; };
+		1EAE0FB4E21185C18B22A6D1842909F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1F4332BAD4FD1704C9A2B8EFF9E4EFEA /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		1F91F8D39C8B34128821DB237551F8E4 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h; sourceTree = "<group>"; };
+		212B4291A4B06A261A86A0874E104E1D /* crypto_stream_chacha20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream_chacha20.h; sourceTree = "<group>"; };
+		248487F5D4E74E18BD4F631EBEFD744D /* crypto_aead_aes256gcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_aead_aes256gcm.h; sourceTree = "<group>"; };
+		260C73D6ED9D7F91BC1EBCA99BD5E560 /* crypto_secretbox_xsalsa20poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_secretbox_xsalsa20poly1305.h; sourceTree = "<group>"; };
+		26372A832C3FC375130CB7FE29C57DC5 /* NEKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NEKit.debug.xcconfig; sourceTree = "<group>"; };
+		26BDDA20A831FD3E66395CF7809C91E7 /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h; sourceTree = "<group>"; };
 		26F7EBD38D451727F7CD0606AFB49CBF /* Pods-NEKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NEKit_Example-dummy.m"; sourceTree = "<group>"; };
-		2933767F25C59F655E0CD4D60556A982 /* NEKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NEKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		2A0FB8A72789345532EBB7223B9846C5 /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/CLIColor.h; sourceTree = "<group>"; };
+		2A5F8E22E26A02DF38BB7FD0D1D7A4FC /* crypto_auth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_auth.h; sourceTree = "<group>"; };
+		2AD666F58FDEB33F7FC8F5CD51C97308 /* Yaml.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yaml.release.xcconfig; sourceTree = "<group>"; };
 		2BB1D4582256608AC14ADC15BF9271B1 /* Pods-NEKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NEKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2F3B8136E6DEB6A327F3474FD4F183AD /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
+		31A8CDD4040C83E96D57733192487C40 /* crypto_core_hsalsa20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_core_hsalsa20.h; sourceTree = "<group>"; };
+		31C0DC5CD342C28ECF8A03801D3819C7 /* crypto_generichash_blake2b.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_generichash_blake2b.h; sourceTree = "<group>"; };
+		3326FF7A527BD5F069B1501FB2B1AC0F /* MMDB-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MMDB-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		34D440AC924DDB6AB7F51A939E2D116F /* crypto_scalarmult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult.h; sourceTree = "<group>"; };
+		36A77E070D61F5DD1DD5CA5B5C88E428 /* crypto_stream_aes128ctr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream_aes128ctr.h; sourceTree = "<group>"; };
+		3733F0E3A769D1AA8804D48CE82AF681 /* crypto_box.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_box.h; sourceTree = "<group>"; };
+		3BE21703AC9973185942B2B590C88EB4 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog+LOGV.h"; sourceTree = "<group>"; };
 		3D29DCCA521544F61A7776E1D767D076 /* Pods-NEKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		48D7EDD27782986B0B3E29423205B85C /* NEKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NEKit-Info.plist"; sourceTree = "<group>"; };
+		3E06980299F25FE04E4FC1A722CA1FFC /* CocoaLumberjack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.release.xcconfig; sourceTree = "<group>"; };
+		3EBDB299EB996048AEBB70EC782228DC /* Yaml-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yaml-umbrella.h"; sourceTree = "<group>"; };
+		3ED030C3F0B51D22B38F23ABC4CAC9A3 /* crypto_shorthash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_shorthash.h; sourceTree = "<group>"; };
+		41FFACD18E21A9863A33C4344A768EAA /* crypto_generichash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_generichash.h; sourceTree = "<group>"; };
+		43A2E1ADDD3F37F403A8065521028A15 /* runtime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = runtime.h; sourceTree = "<group>"; };
+		43ACCE880DC75F11622EB70AFA73B628 /* crypto_core_hchacha20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_core_hchacha20.h; sourceTree = "<group>"; };
+		43DBAF31A0A3CB3BFB4DEFDCC5CBCFDA /* crypto_auth_hmacsha512256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_auth_hmacsha512256.h; sourceTree = "<group>"; };
+		4408A6D2E314480CA8963BA0AB19D154 /* YAMLTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLTokenizer.swift; path = Sources/Yaml/YAMLTokenizer.swift; sourceTree = "<group>"; };
+		45A2DCD504CB78DCE76DD3D5ED602D91 /* libsodium-iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libsodium-iOS.a"; sourceTree = "<group>"; };
+		46CA30BC8FDBC439AF60DCAEB5AB3438 /* crypto_pwhash_argon2i.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash_argon2i.h; sourceTree = "<group>"; };
+		488C38FCF3E682A63A2C735198666DED /* MMDB-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDB-Swift-umbrella.h"; sourceTree = "<group>"; };
+		4BB2F7F1FE4E4E3205523C977349789D /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDASLLogger.h; sourceTree = "<group>"; };
+		4E8BA1CD8E32DBDC8DD54429FB19C505 /* crypto_stream_xsalsa20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream_xsalsa20.h; sourceTree = "<group>"; };
+		4F0ABF85A6632F7049F83EC6E7D92163 /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		51E6270DC9E6D7BF8B76BD957B73ED36 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		53E06103B896AFCC81DE576D20364096 /* Yaml.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yaml.debug.xcconfig; sourceTree = "<group>"; };
+		5DBC07B42A0AA834D405C4599720DCDE /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Internal.h"; path = "Sources/CocoaLumberjack/DDFileLogger+Internal.h"; sourceTree = "<group>"; };
+		5E471EA2541CAA214C69751CBE474F72 /* crypto_verify_16.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_verify_16.h; sourceTree = "<group>"; };
 		5EEBAEF56594C25D84F21B2B55CC5224 /* Pods-NEKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NEKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		6305670D25C2AEDE80E3D6868343A6CB /* crypto_scalarmult_curve25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult_curve25519.h; sourceTree = "<group>"; };
 		6385541716BD8C0EE20D0E337E0B1CD3 /* Pods-NEKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		64632A71BF7582BA5F10C77C5F8D445C /* NEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AA84189F551A65D89F090DB18833300 /* NEKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NEKit-umbrella.h"; sourceTree = "<group>"; };
+		64632A71BF7582BA5F10C77C5F8D445C /* NEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NEKit.framework; path = NEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		667D831D2243D955A600FA5C451657D6 /* crypto_pwhash_scryptsalsa208sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash_scryptsalsa208sha256.h; sourceTree = "<group>"; };
+		67F5F79B13BF1D1A34AC00D74E644E4C /* NEKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NEKit.modulemap; sourceTree = "<group>"; };
+		67FE4BB0105CB8B4310DB3304B3F738A /* crypto_hash_sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_hash_sha256.h; sourceTree = "<group>"; };
+		693550398F9B76B14AA2A6ADF5DA36F9 /* maxminddb_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = maxminddb_config.h; path = Sources/libmaxminddb/maxminddb_config.h; sourceTree = "<group>"; };
+		6B9A64EFE21EDBEEB8F59B8F08075392 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2DBBDECC864DD84594DFCC8BFEF5F3 /* Pods-NEKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NEKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6D3A08DE0041FA4F64116377081A3A74 /* randombytes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = randombytes.h; sourceTree = "<group>"; };
+		6D71FED2C916CB778D4802A768F3E765 /* maxminddb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = maxminddb.h; path = Sources/libmaxminddb/maxminddb.h; sourceTree = "<group>"; };
+		6DAC9FF0C2BB2467EB23A5600790958C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		6F04A88F233D280763B1F03CDB05FE75 /* crypto_int64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_int64.h; sourceTree = "<group>"; };
+		6F6E1E4B018DDBA3C2B0003D5834B43D /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDOSLogger.h; sourceTree = "<group>"; };
+		71908842E5D688F0CA6BBBF100B2F18F /* crypto_auth_hmacsha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_auth_hmacsha512.h; sourceTree = "<group>"; };
 		7317504D0D7A8B829D150B0815A79739 /* Pods-NEKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NEKit_Tests.modulemap"; sourceTree = "<group>"; };
-		7A6BD2AF57826C4DA722E8F8B1BCFE50 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8695DA2B4B1DE81F86EB28AEC86E08FB /* Pods_NEKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NEKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88B2C273DBCF4B563CF95E5402A1332F /* NEKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NEKit-dummy.m"; sourceTree = "<group>"; };
-		90B63F5B8A4C1627E8659ABF63574DC1 /* NEKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NEKit.modulemap; sourceTree = "<group>"; };
+		731BBD4CBE8EC20401830A87A37A6469 /* data-pool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "data-pool.h"; path = "Sources/libmaxminddb/data-pool.h"; sourceTree = "<group>"; };
+		73B3C10806B84EE675BEFCACB1407B4F /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		74487E9F08214BC5012836314E5C5E0E /* libsodium-macOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libsodium-macOS.a"; sourceTree = "<group>"; };
+		7573C31ED5408BE0F1F5C357DA9CA192 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
+		785436CD01C14423A0712ED7F84F533B /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDMultiFormatter.h; sourceTree = "<group>"; };
+		7A1F113A4F723045017BCA11022B9213 /* crypto_stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream.h; sourceTree = "<group>"; };
+		7A7D2392C3FC3590A312A416C4A3C8E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7A8B5F6F726164815066DF12E11EE99A /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Sources/CocoaLumberjack/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
+		7B0D9AE7217C5E364EFA35BD2714513E /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = "Sources/CocoaLumberjack/Supporting Files/DDLegacyMacros.h"; sourceTree = "<group>"; };
+		7B2DA65EFF7F12AB8DEDC9B70352F162 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDASLLogCapture.h; sourceTree = "<group>"; };
+		7C2889245C7694345D1DFADB383DC33E /* MMDB-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MMDB-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		7CCB84FBB08D4F82066982EA1135580E /* MMDB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMDB.swift; path = Sources/MMDB.swift; sourceTree = "<group>"; };
+		7CD37684C40FF32A5B013A4C554C3726 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D58956F0F61CF64248AB0643C040DBE /* crypto_shorthash_siphash24.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_shorthash_siphash24.h; sourceTree = "<group>"; };
+		80435CFEB8E0AF0DE6937AF939164378 /* crypto_secretbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_secretbox.h; sourceTree = "<group>"; };
+		8168FF961F0B812704EA6C7720072404 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		82248E3FA36D0B5F3CDF829FE8555961 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDAssertMacros.h; sourceTree = "<group>"; };
+		8381872C69A06442FCBDA466439E5221 /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		84948FE97AA38C9C5C53DAD5A87CE2E8 /* MMDB-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDB-Swift-prefix.pch"; sourceTree = "<group>"; };
+		8695DA2B4B1DE81F86EB28AEC86E08FB /* Pods_NEKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NEKit_Tests.framework; path = "Pods-NEKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87ABF2CEF7167F7648DE2DF073F98FF4 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		88153B99F7A8DDD6982DE8BAD4CEA446 /* crypto_core_salsa20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa20.h; sourceTree = "<group>"; };
+		887B03A2E1CBAD9CD48F01E01342EE31 /* maxminddb_unions.c */ = {isa = PBXFileReference; includeInIndex = 1; name = maxminddb_unions.c; path = Sources/libmaxminddb/maxminddb_unions.c; sourceTree = "<group>"; };
+		899C2F8F5A6D6E8DB25CDCEA6F75E220 /* NEKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NEKit.release.xcconfig; sourceTree = "<group>"; };
+		8EF808B0C5684200247B9061490A07F1 /* crypto_core_salsa2012.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa2012.h; sourceTree = "<group>"; };
+		901C9B152058428E99E25992DB7BA420 /* NEKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NEKit-dummy.m"; sourceTree = "<group>"; };
+		957310E0DD2FEF6F1040CC065E166833 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Sources/CocoaLumberjack/DDASLLogger.m; sourceTree = "<group>"; };
+		95F9B63EAE760DD1A98352239F86A955 /* sodium-lib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sodium-lib.h"; sourceTree = "<group>"; };
 		9662B6B0AA38C86ACA2D274C4176FA59 /* Pods-NEKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NEKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		96A223D4DFDAC7E4EE413DDFBC70C7EA /* maxminddb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = maxminddb.c; path = Sources/libmaxminddb/maxminddb.c; sourceTree = "<group>"; };
+		98A106547580944AD6892772C7997756 /* crypto_sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_sign.h; sourceTree = "<group>"; };
 		98AE8BA664E60367ED545A01C51616AC /* Pods-NEKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9937D2F9876ED680A612BBA57DBD493C /* Pods-NEKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NEKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99BDFA3D73BAFAB9C0E14E9B610D67E9 /* randombytes_sysrandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = randombytes_sysrandom.h; sourceTree = "<group>"; };
+		9B47C23F1D4890034AF3463573B93950 /* crypto_pwhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash.h; sourceTree = "<group>"; };
+		9C3876BA9A0BF5265AC6940DD35E55ED /* MMDB-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "MMDB-Swift.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F331D40F4F5E1FD3E71CF502B348D8C /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
+		9F415BD2B94D80D655D31DC2D58C3C08 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		9FB7853F7D0F988590340C91D0AE645A /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		A0BBDEC9D77BE1AC33A8E3005D3887C7 /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
+		A158ABD6495EE0226767AFA3A70EFF2E /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Sources/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
 		A2D805E61373ED7069EEC83A8A1A47CC /* Pods-NEKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NEKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A4B75668C7D41AC468C5E9A13A66CB9E /* crypto_sign_ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_sign_ed25519.h; sourceTree = "<group>"; };
+		A751AD62522FD18F1088AC891E8ABBA5 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A76477C20E7D652748B6924B2DE74E38 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A792D141E25D314B309FA515BCD9EA4C /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Sources/CocoaLumberjack/DDASLLogCapture.m; sourceTree = "<group>"; };
+		A901DCB482138180E12D6076D8B2E9A7 /* NEKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NEKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A93362EBABAB265C59ACB325D6F97892 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		AB59C7B308FE63B2F355D153C4F55791 /* crypto_verify_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_verify_64.h; sourceTree = "<group>"; };
+		ADBC52682B37A73189358553E47DD7E7 /* crypto_uint32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_uint32.h; sourceTree = "<group>"; };
+		B0356CDEFB1A58F77B68EC2FD884883B /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Sources/CocoaLumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		B3FE69C267F669735D937DFD5729760B /* crypto_verify_32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_verify_32.h; sourceTree = "<group>"; };
+		B408B0D553BEA927ADAF80211A2C5C72 /* crypto_onetimeauth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_onetimeauth.h; sourceTree = "<group>"; };
+		B57807946736F427D511FCCC3A81E1B0 /* randombytes_salsa20_random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = randombytes_salsa20_random.h; sourceTree = "<group>"; };
 		B78E0865CA72EF202BBBE1E395D3C02D /* Pods-NEKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NEKit_Example-Info.plist"; sourceTree = "<group>"; };
+		B80184172F20B58E8C9189E2E8DE1C0C /* Yaml-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yaml-dummy.m"; sourceTree = "<group>"; };
+		B8D3DA8DCCF7A756AFBA94D673A4B0F8 /* Yaml-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yaml-prefix.pch"; sourceTree = "<group>"; };
+		B938F4BD745F6B8D96A8E0DC00C214BE /* YAMLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLResult.swift; path = Sources/Yaml/YAMLResult.swift; sourceTree = "<group>"; };
+		BB1DBE816752C94F2BA3D29A75947334 /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
+		BBA7B064427996A6968609F7FCCB6D41 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
+		BE1F2B8A1110F0D393B5115772DE7F26 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		BEE10218B935811C90317267C0536D75 /* NEKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NEKit-prefix.pch"; sourceTree = "<group>"; };
+		C1C7E9774EEB350FD102B440476BE79B /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6141CC9CA50F779652009BDDB8C079E /* Pods-NEKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CDFC5285F48F2B5431B1A2A2F9E0896A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D137DE07025780F8B637360D4B14715B /* NEKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NEKit-prefix.pch"; sourceTree = "<group>"; };
+		C7AB1CA787D5220BCC7C47488F029F3D /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		C9B3382072466FC8FFD2FA8BB9A69739 /* crypto_uint16.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_uint16.h; sourceTree = "<group>"; };
+		CCC02629051F6ABE05A95054830B73D9 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = "Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h"; sourceTree = "<group>"; };
+		D05766534BB8D952592B1F48516FA91A /* crypto_stream_salsa208.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream_salsa208.h; sourceTree = "<group>"; };
+		D0A49A19D4645229D00BC826FA3183D4 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLogMacros.h; sourceTree = "<group>"; };
+		D0E414AF4A0909A2B7D0C6CF74BAE591 /* crypto_uint8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_uint8.h; sourceTree = "<group>"; };
+		D206DC6BC2E53AB735E4765D83C10E9D /* MMDB_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMDB_Swift.framework; path = "MMDB-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D322A5EE03182B11A501FB1292EE17BB /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
+		D41528BB3FEAD8CD74C6AD9FCE0489A0 /* NEKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NEKit-Info.plist"; sourceTree = "<group>"; };
 		D486F64E797B47D6128C660F7D11DD27 /* Pods-NEKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NEKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DEDE14721CAB9A8B6E8940BDF70F1E1B /* NEKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NEKit.debug.xcconfig; sourceTree = "<group>"; };
+		D6460F2C5E4CFE975E5D58E5D02C3589 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h; sourceTree = "<group>"; };
+		D6A7B54C73FAF335E5301A5C4B791FBF /* Yaml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Yaml.framework; path = Yaml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7334E83D3240B19ED7EA3725B267CC3 /* YAMLRegex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAMLRegex.swift; path = Sources/Yaml/YAMLRegex.swift; sourceTree = "<group>"; };
+		DC896DB0681722EDABB80AC6D5A54A28 /* NEKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NEKit-umbrella.h"; sourceTree = "<group>"; };
+		DD5B7B13552827277E8BC7B1C5F83CCA /* crypto_int32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_int32.h; sourceTree = "<group>"; };
+		DDA4E44FFEA11C7005ED8FBFA44739C9 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Sources/CocoaLumberjack/DDLoggerNames.m; sourceTree = "<group>"; };
+		DE1910BA0269A88FA7FE9C14C5EF47D8 /* maxminddb-compat-util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "maxminddb-compat-util.h"; path = "Sources/libmaxminddb/maxminddb-compat-util.h"; sourceTree = "<group>"; };
+		DE40F291338F3EBEEF7A72C5CF07AF6B /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		DFDF9B594186D4037C7F8A7CEF17DA66 /* utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		E0FB3FCE8FCFC7EAFA449BE04A064821 /* Pods-NEKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NEKit_Example.modulemap"; sourceTree = "<group>"; };
-		FD7043F2A3BD96514B1D75C57000D2A7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NEKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		E1D3FBF5C2D1B37451B618D915B81F72 /* Yaml.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yaml.swift; path = Sources/Yaml/Yaml.swift; sourceTree = "<group>"; };
+		E4F175A91953949A0055A01841CE0CC9 /* crypto_stream_salsa20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream_salsa20.h; sourceTree = "<group>"; };
+		E6A50B8C543A00B28DF7A4F7C711B538 /* CocoaLumberjack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.debug.xcconfig; sourceTree = "<group>"; };
+		E7DF284367FCC2678968BDC44049963C /* maxminddb_unions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = maxminddb_unions.h; path = Sources/libmaxminddb/maxminddb_unions.h; sourceTree = "<group>"; };
+		E8AA51FF57FD4F3BAE0388F6F9C29938 /* Sodium.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Sodium.h; sourceTree = "<group>"; };
+		E9E1508606596D5619210022E4FE54E2 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Sources/CocoaLumberjack/CLI/CLIColor.m; sourceTree = "<group>"; };
+		EAA2AC947A4A652A251C8E312F760B65 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		ECB96EF9C90333BB8094832EB948D6D0 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		EF90D4E7E56207A78BFD1F02C2C2175C /* crypto_stream_salsa2012.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_stream_salsa2012.h; sourceTree = "<group>"; };
+		F15EBB576A288ED9A3D6B5E10A3543B1 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Sources/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
+		F5DD2CC74EAACC56916759EB7FCEC014 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Sources/CocoaLumberjack/DDLog.m; sourceTree = "<group>"; };
+		F606772390D0CD5C4A09CA6B88245662 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		F660DC53F3F2D60300DA507E83013EAB /* crypto_hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_hash.h; sourceTree = "<group>"; };
+		F7791804F5EAF6B31DB96374A9267DCF /* crypto_uint64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_uint64.h; sourceTree = "<group>"; };
+		FE6532528BA1EADE473FBC8876F03DCA /* MMDB-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDB-Swift-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */,
+				14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */,
+				0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		649681368EDA34BF4DA0A913D3782ADE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,25 +431,132 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897965747556E931A47275824B1A9370 /* Frameworks */ = {
+		85D130C890A41EE223A85B2F59D220E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B746A0AB443096F2DDE91111167EF7F /* Foundation.framework in Frameworks */,
+				E4CD78139B773B689B622CBB70662661 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0A89F710125BAD52AA0635A100FB6D4 /* Frameworks */ = {
+		975906FEF5FC915C78599A5336CFF290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				493F91645BC27488D152BCACA4134EE9 /* Foundation.framework in Frameworks */,
+				92097270F4BD13B79EC7ECD812EF64E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A892FF957DFA1390EDDB13BDFBB79F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F07908B39571E7D260552A01170B8C1 /* CocoaAsyncSocket.framework in Frameworks */,
+				A10DA2A0B5B9D092C38422E87DBC482B /* CocoaLumberjack.framework in Frameworks */,
+				E9804EB8B05C84A2AE0A5D5C7427FCFB /* Foundation.framework in Frameworks */,
+				A73F28040FC0081FE484E7F3C9149956 /* MMDB_Swift.framework in Frameworks */,
+				3106E95AF85BF6B837EB1D16DDEEE264 /* NetworkExtension.framework in Frameworks */,
+				F9354819CABF7CC6433015E076C54244 /* UIKit.framework in Frameworks */,
+				078ED1016E73C05590143BEC55B08A5B /* Yaml.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCACBC05A57F91BA99F4DA4A50C63F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BED9AF526FAC472CBC51BA4E8C44C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6A67032612CD014C8E564595D1BA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657035B7971A9B5EAA8AA911A218697A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007CA9AC8DA4BBC9F74C616BC981BD86 /* MMDB-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				16DF43CB6B86C118A3C606BA09E96D25 /* data-pool.c */,
+				731BBD4CBE8EC20401830A87A37A6469 /* data-pool.h */,
+				96A223D4DFDAC7E4EE413DDFBC70C7EA /* maxminddb.c */,
+				6D71FED2C916CB778D4802A768F3E765 /* maxminddb.h */,
+				DE1910BA0269A88FA7FE9C14C5EF47D8 /* maxminddb-compat-util.h */,
+				693550398F9B76B14AA2A6ADF5DA36F9 /* maxminddb_config.h */,
+				887B03A2E1CBAD9CD48F01E01342EE31 /* maxminddb_unions.c */,
+				E7DF284367FCC2678968BDC44049963C /* maxminddb_unions.h */,
+				7CCB84FBB08D4F82066982EA1135580E /* MMDB.swift */,
+				52824D7E49B10A9E042D5CA792BDD74B /* Support Files */,
+			);
+			name = "MMDB-Swift";
+			path = "MMDB-Swift";
+			sourceTree = "<group>";
+		};
+		0301935E6C2E75112742F16D93421F79 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				45A2DCD504CB78DCE76DD3D5ED602D91 /* libsodium-iOS.a */,
+				74487E9F08214BC5012836314E5C5E0E /* libsodium-macOS.a */,
+			);
+			name = libs;
+			path = libs;
+			sourceTree = "<group>";
+		};
+		28672708B9CF060EB9B2987CEDB0D606 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2A0FB8A72789345532EBB7223B9846C5 /* CLIColor.h */,
+				E9E1508606596D5619210022E4FE54E2 /* CLIColor.m */,
+				CCC02629051F6ABE05A95054830B73D9 /* CocoaLumberjack.h */,
+				51E6270DC9E6D7BF8B76BD957B73ED36 /* DDAbstractDatabaseLogger.h */,
+				B0356CDEFB1A58F77B68EC2FD884883B /* DDAbstractDatabaseLogger.m */,
+				7B2DA65EFF7F12AB8DEDC9B70352F162 /* DDASLLogCapture.h */,
+				A792D141E25D314B309FA515BCD9EA4C /* DDASLLogCapture.m */,
+				4BB2F7F1FE4E4E3205523C977349789D /* DDASLLogger.h */,
+				957310E0DD2FEF6F1040CC065E166833 /* DDASLLogger.m */,
+				82248E3FA36D0B5F3CDF829FE8555961 /* DDAssertMacros.h */,
+				87ABF2CEF7167F7648DE2DF073F98FF4 /* DDContextFilterLogFormatter.h */,
+				C7AB1CA787D5220BCC7C47488F029F3D /* DDContextFilterLogFormatter.m */,
+				73B3C10806B84EE675BEFCACB1407B4F /* DDDispatchQueueLogFormatter.h */,
+				DE40F291338F3EBEEF7A72C5CF07AF6B /* DDDispatchQueueLogFormatter.m */,
+				1F91F8D39C8B34128821DB237551F8E4 /* DDFileLogger.h */,
+				A158ABD6495EE0226767AFA3A70EFF2E /* DDFileLogger.m */,
+				D322A5EE03182B11A501FB1292EE17BB /* DDFileLogger+Buffering.h */,
+				7A8B5F6F726164815066DF12E11EE99A /* DDFileLogger+Buffering.m */,
+				5DBC07B42A0AA834D405C4599720DCDE /* DDFileLogger+Internal.h */,
+				7B0D9AE7217C5E364EFA35BD2714513E /* DDLegacyMacros.h */,
+				D6460F2C5E4CFE975E5D58E5D02C3589 /* DDLog.h */,
+				F5DD2CC74EAACC56916759EB7FCEC014 /* DDLog.m */,
+				3BE21703AC9973185942B2B590C88EB4 /* DDLog+LOGV.h */,
+				26BDDA20A831FD3E66395CF7809C91E7 /* DDLoggerNames.h */,
+				DDA4E44FFEA11C7005ED8FBFA44739C9 /* DDLoggerNames.m */,
+				D0A49A19D4645229D00BC826FA3183D4 /* DDLogMacros.h */,
+				785436CD01C14423A0712ED7F84F533B /* DDMultiFormatter.h */,
+				1F4332BAD4FD1704C9A2B8EFF9E4EFEA /* DDMultiFormatter.m */,
+				6F6E1E4B018DDBA3C2B0003D5834B43D /* DDOSLogger.h */,
+				BBA7B064427996A6968609F7FCCB6D41 /* DDOSLogger.m */,
+				2F3B8136E6DEB6A327F3474FD4F183AD /* DDTTYLogger.h */,
+				F15EBB576A288ED9A3D6B5E10A3543B1 /* DDTTYLogger.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2B6972DF793CA9E726268CF8F684F804 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				13AD2CA6058AAF740193AEAA175DA35A /* Resolver.swift */,
+				05DF4435F26F20A0D287F09DEBFA8545 /* SafeDict.swift */,
+			);
+			name = Resolver;
+			path = NEKit/Resolver;
+			sourceTree = "<group>";
+		};
 		3251598217B9778276C6852828F0419E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +566,71 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		705F24E2AECB8CF9757E7DD6C0D7A3FC /* NEKit */ = {
+		3D5B8C3E788BE3539FB15DD37FA24A96 /* NEKit */ = {
 			isa = PBXGroup;
 			children = (
-				FD7043F2A3BD96514B1D75C57000D2A7 /* ReplaceMe.swift */,
-				D6B6D40CB259BA2B62B4E33ED8B362A2 /* Pod */,
-				8E76C2E00A15458EB10473B92501FDFD /* Support Files */,
+				99C7B1EBB58035E5C682A923523ECA2E /* Pod */,
+				2B6972DF793CA9E726268CF8F684F804 /* Resolver */,
+				CC19F3A98596DD59F771AB7D4B1ECD2D /* Sodium */,
+				F743F2797FDF5F8C15630A76B89B28CD /* Support Files */,
 			);
 			name = NEKit;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		3EB1E59E4F94113DF70B8669AE57EB4A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6DAC9FF0C2BB2467EB23A5600790958C /* CFNetwork.framework */,
+				6BB015BA1F84F5CB61AE98564352C257 /* Foundation.framework */,
+				7573C31ED5408BE0F1F5C357DA9CA192 /* NetworkExtension.framework */,
+				EAA2AC947A4A652A251C8E312F760B65 /* Security.framework */,
+				1EAE0FB4E21185C18B22A6D1842909F9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		52824D7E49B10A9E042D5CA792BDD74B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C3876BA9A0BF5265AC6940DD35E55ED /* MMDB-Swift.modulemap */,
+				FE6532528BA1EADE473FBC8876F03DCA /* MMDB-Swift-dummy.m */,
+				0EF282EDB765E1FCC0A454CF15F72328 /* MMDB-Swift-Info.plist */,
+				84948FE97AA38C9C5C53DAD5A87CE2E8 /* MMDB-Swift-prefix.pch */,
+				488C38FCF3E682A63A2C735198666DED /* MMDB-Swift-umbrella.h */,
+				3326FF7A527BD5F069B1501FB2B1AC0F /* MMDB-Swift.debug.xcconfig */,
+				7C2889245C7694345D1DFADB383DC33E /* MMDB-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMDB-Swift";
+			sourceTree = "<group>";
+		};
+		7360718F63D3C2483399E36C56189208 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11CC5728E7AD1EDC6BA7875B2ECAE6C4 /* Yaml.modulemap */,
+				B80184172F20B58E8C9189E2E8DE1C0C /* Yaml-dummy.m */,
+				0232582202D5B0DD8F65FA4549650EE7 /* Yaml-Info.plist */,
+				B8D3DA8DCCF7A756AFBA94D673A4B0F8 /* Yaml-prefix.pch */,
+				3EBDB299EB996048AEBB70EC782228DC /* Yaml-umbrella.h */,
+				53E06103B896AFCC81DE576D20364096 /* Yaml.debug.xcconfig */,
+				2AD666F58FDEB33F7FC8F5CD51C97308 /* Yaml.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Yaml";
+			sourceTree = "<group>";
+		};
+		788E6E6662063EB976FD137E33A5B5D0 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				ECB96EF9C90333BB8094832EB948D6D0 /* GCDAsyncSocket.h */,
+				C1C7E9774EEB350FD102B440476BE79B /* GCDAsyncSocket.m */,
+				A751AD62522FD18F1088AC891E8ABBA5 /* GCDAsyncUdpSocket.h */,
+				A93362EBABAB265C59ACB325D6F97892 /* GCDAsyncUdpSocket.m */,
+				DF700FDE235CF65E9920127640913FE7 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
 		79A79E1AF2C253290297CA0330EFD33A /* Pods-NEKit_Tests */ = {
@@ -134,6 +647,71 @@
 			);
 			name = "Pods-NEKit_Tests";
 			path = "Target Support Files/Pods-NEKit_Tests";
+			sourceTree = "<group>";
+		};
+		7AC31B6BE4520A342A8A92EFC7F35C24 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				0186253426E09A7B3F69F0DFA500E83F /* core.h */,
+				248487F5D4E74E18BD4F631EBEFD744D /* crypto_aead_aes256gcm.h */,
+				0053D66DE5DF44F2288F58F45450D175 /* crypto_aead_chacha20poly1305.h */,
+				2A5F8E22E26A02DF38BB7FD0D1D7A4FC /* crypto_auth.h */,
+				172B7D5FE8FBD51D7BBAD43984969AA9 /* crypto_auth_hmacsha256.h */,
+				71908842E5D688F0CA6BBBF100B2F18F /* crypto_auth_hmacsha512.h */,
+				43DBAF31A0A3CB3BFB4DEFDCC5CBCFDA /* crypto_auth_hmacsha512256.h */,
+				3733F0E3A769D1AA8804D48CE82AF681 /* crypto_box.h */,
+				0A035AAC21CA03F93C40EB8E0B9D4DA7 /* crypto_box_curve25519xsalsa20poly1305.h */,
+				43ACCE880DC75F11622EB70AFA73B628 /* crypto_core_hchacha20.h */,
+				31A8CDD4040C83E96D57733192487C40 /* crypto_core_hsalsa20.h */,
+				88153B99F7A8DDD6982DE8BAD4CEA446 /* crypto_core_salsa20.h */,
+				8EF808B0C5684200247B9061490A07F1 /* crypto_core_salsa2012.h */,
+				16AF4D78682274DAF2C67CECFACF84FE /* crypto_core_salsa208.h */,
+				41FFACD18E21A9863A33C4344A768EAA /* crypto_generichash.h */,
+				31C0DC5CD342C28ECF8A03801D3819C7 /* crypto_generichash_blake2b.h */,
+				F660DC53F3F2D60300DA507E83013EAB /* crypto_hash.h */,
+				67FE4BB0105CB8B4310DB3304B3F738A /* crypto_hash_sha256.h */,
+				1E5282C96ED79340C63BB8934AAD6E3E /* crypto_hash_sha512.h */,
+				DD5B7B13552827277E8BC7B1C5F83CCA /* crypto_int32.h */,
+				6F04A88F233D280763B1F03CDB05FE75 /* crypto_int64.h */,
+				B408B0D553BEA927ADAF80211A2C5C72 /* crypto_onetimeauth.h */,
+				04F17785C7290774B5A90D6B702F718C /* crypto_onetimeauth_poly1305.h */,
+				9B47C23F1D4890034AF3463573B93950 /* crypto_pwhash.h */,
+				46CA30BC8FDBC439AF60DCAEB5AB3438 /* crypto_pwhash_argon2i.h */,
+				667D831D2243D955A600FA5C451657D6 /* crypto_pwhash_scryptsalsa208sha256.h */,
+				34D440AC924DDB6AB7F51A939E2D116F /* crypto_scalarmult.h */,
+				6305670D25C2AEDE80E3D6868343A6CB /* crypto_scalarmult_curve25519.h */,
+				80435CFEB8E0AF0DE6937AF939164378 /* crypto_secretbox.h */,
+				260C73D6ED9D7F91BC1EBCA99BD5E560 /* crypto_secretbox_xsalsa20poly1305.h */,
+				3ED030C3F0B51D22B38F23ABC4CAC9A3 /* crypto_shorthash.h */,
+				7D58956F0F61CF64248AB0643C040DBE /* crypto_shorthash_siphash24.h */,
+				98A106547580944AD6892772C7997756 /* crypto_sign.h */,
+				A4B75668C7D41AC468C5E9A13A66CB9E /* crypto_sign_ed25519.h */,
+				BB1DBE816752C94F2BA3D29A75947334 /* crypto_sign_edwards25519sha512batch.h */,
+				7A1F113A4F723045017BCA11022B9213 /* crypto_stream.h */,
+				36A77E070D61F5DD1DD5CA5B5C88E428 /* crypto_stream_aes128ctr.h */,
+				212B4291A4B06A261A86A0874E104E1D /* crypto_stream_chacha20.h */,
+				E4F175A91953949A0055A01841CE0CC9 /* crypto_stream_salsa20.h */,
+				EF90D4E7E56207A78BFD1F02C2C2175C /* crypto_stream_salsa2012.h */,
+				D05766534BB8D952592B1F48516FA91A /* crypto_stream_salsa208.h */,
+				4E8BA1CD8E32DBDC8DD54429FB19C505 /* crypto_stream_xsalsa20.h */,
+				C9B3382072466FC8FFD2FA8BB9A69739 /* crypto_uint16.h */,
+				ADBC52682B37A73189358553E47DD7E7 /* crypto_uint32.h */,
+				F7791804F5EAF6B31DB96374A9267DCF /* crypto_uint64.h */,
+				D0E414AF4A0909A2B7D0C6CF74BAE591 /* crypto_uint8.h */,
+				5E471EA2541CAA214C69751CBE474F72 /* crypto_verify_16.h */,
+				B3FE69C267F669735D937DFD5729760B /* crypto_verify_32.h */,
+				AB59C7B308FE63B2F355D153C4F55791 /* crypto_verify_64.h */,
+				1360E0BD69105A6498F8AEE5BD1B7D3B /* export.h */,
+				6D3A08DE0041FA4F64116377081A3A74 /* randombytes.h */,
+				B57807946736F427D511FCCC3A81E1B0 /* randombytes_salsa20_random.h */,
+				99BDFA3D73BAFAB9C0E14E9B610D67E9 /* randombytes_sysrandom.h */,
+				43A2E1ADDD3F37F403A8065521028A15 /* runtime.h */,
+				95F9B63EAE760DD1A98352239F86A955 /* sodium-lib.h */,
+				DFDF9B594186D4037C7F8A7CEF17DA66 /* utils.h */,
+				A76477C20E7D652748B6924B2DE74E38 /* version.h */,
+			);
+			name = includes;
+			path = includes;
 			sourceTree = "<group>";
 		};
 		8D596CD11DEE15980D3D728DEBF8DEC9 /* Pods-NEKit_Example */ = {
@@ -153,74 +731,152 @@
 			path = "Target Support Files/Pods-NEKit_Example";
 			sourceTree = "<group>";
 		};
-		8E76C2E00A15458EB10473B92501FDFD /* Support Files */ = {
+		99C7B1EBB58035E5C682A923523ECA2E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				90B63F5B8A4C1627E8659ABF63574DC1 /* NEKit.modulemap */,
-				88B2C273DBCF4B563CF95E5402A1332F /* NEKit-dummy.m */,
-				48D7EDD27782986B0B3E29423205B85C /* NEKit-Info.plist */,
-				D137DE07025780F8B637360D4B14715B /* NEKit-prefix.pch */,
-				6AA84189F551A65D89F090DB18833300 /* NEKit-umbrella.h */,
-				DEDE14721CAB9A8B6E8940BDF70F1E1B /* NEKit.debug.xcconfig */,
-				1482803FE4D07538304543F478B1B791 /* NEKit.release.xcconfig */,
+				7A7D2392C3FC3590A312A416C4A3C8E1 /* LICENSE */,
+				A901DCB482138180E12D6076D8B2E9A7 /* NEKit.podspec */,
+				0B5FA6F0FD6894169031B6F7AE075431 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C00994B959902A36901BC51D3AA975C1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B8C3E788BE3539FB15DD37FA24A96 /* NEKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C1118882325468E10E483EB8E75FD16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11969ADDF9E4B4B0292A27F8AB9F9F34 /* CocoaAsyncSocket.framework */,
+				7CD37684C40FF32A5B013A4C554C3726 /* CocoaLumberjack.framework */,
+				1BD52B3D83715941EF8C23FE4CD2658C /* MMDB_Swift.framework */,
+				05253862BBD6216975A1D0FFC39ED688 /* Yaml.framework */,
+				3EB1E59E4F94113DF70B8669AE57EB4A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C57CACBC76EE6B878F0F8ED313BB4D8B /* Yaml */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3FBF5C2D1B37451B618D915B81F72 /* Yaml.swift */,
+				1116607A56C87139D48973B33BA0E996 /* YAMLOperators.swift */,
+				18CD8907253C73B5F9ADD21972F0A512 /* YAMLParser.swift */,
+				D7334E83D3240B19ED7EA3725B267CC3 /* YAMLRegex.swift */,
+				B938F4BD745F6B8D96A8E0DC00C214BE /* YAMLResult.swift */,
+				4408A6D2E314480CA8963BA0AB19D154 /* YAMLTokenizer.swift */,
+				7360718F63D3C2483399E36C56189208 /* Support Files */,
+			);
+			name = Yaml;
+			path = Yaml;
+			sourceTree = "<group>";
+		};
+		C7817B26B13BD43E77ADC5FBA97E589C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F415BD2B94D80D655D31DC2D58C3C08 /* CocoaLumberjack.modulemap */,
+				F606772390D0CD5C4A09CA6B88245662 /* CocoaLumberjack-dummy.m */,
+				9F331D40F4F5E1FD3E71CF502B348D8C /* CocoaLumberjack-Info.plist */,
+				0455DA2572268642C81268FDCF662054 /* CocoaLumberjack-prefix.pch */,
+				A0BBDEC9D77BE1AC33A8E3005D3887C7 /* CocoaLumberjack-umbrella.h */,
+				E6A50B8C543A00B28DF7A4F7C711B538 /* CocoaLumberjack.debug.xcconfig */,
+				3E06980299F25FE04E4FC1A722CA1FFC /* CocoaLumberjack.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/NEKit";
+			path = "../Target Support Files/CocoaLumberjack";
 			sourceTree = "<group>";
 		};
-		A238525A8E0BD56E1E4A99D69FDD2444 /* Products */ = {
+		CC19F3A98596DD59F771AB7D4B1ECD2D /* Sodium */ = {
 			isa = PBXGroup;
 			children = (
-				64632A71BF7582BA5F10C77C5F8D445C /* NEKit.framework */,
-				0F92A9E37612E2C43D24151EDEABD588 /* Pods_NEKit_Example.framework */,
-				8695DA2B4B1DE81F86EB28AEC86E08FB /* Pods_NEKit_Tests.framework */,
+				E8AA51FF57FD4F3BAE0388F6F9C29938 /* Sodium.h */,
+				7AC31B6BE4520A342A8A92EFC7F35C24 /* includes */,
+				0301935E6C2E75112742F16D93421F79 /* libs */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Sodium;
+			path = NEKit/Sodium;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				ECCC1CD1B0558FDFCB33DB3BB969F7D1 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A238525A8E0BD56E1E4A99D69FDD2444 /* Products */,
+				C00994B959902A36901BC51D3AA975C1 /* Development Pods */,
+				C1118882325468E10E483EB8E75FD16E /* Frameworks */,
+				E0E691A9F7135586A4540D898B01C19E /* Pods */,
+				ECA1E030A2A916EF41E14C9FD5C850D0 /* Products */,
 				3251598217B9778276C6852828F0419E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DF700FDE235CF65E9920127640913FE7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				199A202B6824127544F3D80A2BED6188 /* CocoaAsyncSocket.modulemap */,
+				8168FF961F0B812704EA6C7720072404 /* CocoaAsyncSocket-dummy.m */,
+				6B9A64EFE21EDBEEB8F59B8F08075392 /* CocoaAsyncSocket-Info.plist */,
+				9FB7853F7D0F988590340C91D0AE645A /* CocoaAsyncSocket-prefix.pch */,
+				BE1F2B8A1110F0D393B5115772DE7F26 /* CocoaAsyncSocket-umbrella.h */,
+				8381872C69A06442FCBDA466439E5221 /* CocoaAsyncSocket.debug.xcconfig */,
+				4F0ABF85A6632F7049F83EC6E7D92163 /* CocoaAsyncSocket.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
 			sourceTree = "<group>";
 		};
-		D6B6D40CB259BA2B62B4E33ED8B362A2 /* Pod */ = {
+		E0E691A9F7135586A4540D898B01C19E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A6BD2AF57826C4DA722E8F8B1BCFE50 /* LICENSE */,
-				2933767F25C59F655E0CD4D60556A982 /* NEKit.podspec */,
-				CDFC5285F48F2B5431B1A2A2F9E0896A /* README.md */,
+				788E6E6662063EB976FD137E33A5B5D0 /* CocoaAsyncSocket */,
+				FF8D7204F19F2883E8565E3177ECE8A2 /* CocoaLumberjack */,
+				007CA9AC8DA4BBC9F74C616BC981BD86 /* MMDB-Swift */,
+				C57CACBC76EE6B878F0F8ED313BB4D8B /* Yaml */,
 			);
-			name = Pod;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		ECCC1CD1B0558FDFCB33DB3BB969F7D1 /* Development Pods */ = {
+		ECA1E030A2A916EF41E14C9FD5C850D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				705F24E2AECB8CF9757E7DD6C0D7A3FC /* NEKit */,
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
+				D206DC6BC2E53AB735E4765D83C10E9D /* MMDB_Swift.framework */,
+				64632A71BF7582BA5F10C77C5F8D445C /* NEKit.framework */,
+				0F92A9E37612E2C43D24151EDEABD588 /* Pods_NEKit_Example.framework */,
+				8695DA2B4B1DE81F86EB28AEC86E08FB /* Pods_NEKit_Tests.framework */,
+				D6A7B54C73FAF335E5301A5C4B791FBF /* Yaml.framework */,
 			);
-			name = "Development Pods";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F743F2797FDF5F8C15630A76B89B28CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F5F79B13BF1D1A34AC00D74E644E4C /* NEKit.modulemap */,
+				901C9B152058428E99E25992DB7BA420 /* NEKit-dummy.m */,
+				D41528BB3FEAD8CD74C6AD9FCE0489A0 /* NEKit-Info.plist */,
+				BEE10218B935811C90317267C0536D75 /* NEKit-prefix.pch */,
+				DC896DB0681722EDABB80AC6D5A54A28 /* NEKit-umbrella.h */,
+				26372A832C3FC375130CB7FE29C57DC5 /* NEKit.debug.xcconfig */,
+				899C2F8F5A6D6E8DB25CDCEA6F75E220 /* NEKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NEKit";
+			sourceTree = "<group>";
+		};
+		FF8D7204F19F2883E8565E3177ECE8A2 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				28672708B9CF060EB9B2987CEDB0D606 /* Core */,
+				C7817B26B13BD43E77ADC5FBA97E589C /* Support Files */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,19 +890,135 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06C661219FA1C6F0B05BFD536859A5BA /* Headers */ = {
+		2BAB4E6A896C2CC033406DB3093EFC15 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2FE42429A3CA50B4F8B98DD7389DAB4 /* Pods-NEKit_Example-umbrella.h in Headers */,
+				218EED5A407F38226F8D22C909B2CCEF /* Yaml-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D63A561195F1009D6AD70F8B0CB7CF7 /* Headers */ = {
+		4554224B9FA7897EF1D7D15BF5DF8EA3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F87903BF60F4FF6FFE13024AE53B322 /* NEKit-umbrella.h in Headers */,
+				EA20E2A0714632D5A878BDE36D99B082 /* CLIColor.h in Headers */,
+				101465200B9E75566717D74C47C8C23C /* CocoaLumberjack-umbrella.h in Headers */,
+				BB9B358A52C1B10E5F070C1FF510BD00 /* CocoaLumberjack.h in Headers */,
+				AD6FCF12333CC6DBAD896357DBF0C24C /* DDAbstractDatabaseLogger.h in Headers */,
+				8D45ACABAC0616FAB7BE129AA3204917 /* DDASLLogCapture.h in Headers */,
+				B718DE87CBEB6F3571E6F57B9D6624F9 /* DDASLLogger.h in Headers */,
+				0D8D2A536F74856069B5D5A56CB4652D /* DDAssertMacros.h in Headers */,
+				D27B6368CBC3605D4B68283D7AB679EA /* DDContextFilterLogFormatter.h in Headers */,
+				911F408FC3732C0CB9CC710EBE643C1D /* DDDispatchQueueLogFormatter.h in Headers */,
+				A43702C55D742DC9CA2F7A72BCEEB64E /* DDFileLogger+Buffering.h in Headers */,
+				3EFB8F7DD73F9DD10EF4C7355E6E06F9 /* DDFileLogger+Internal.h in Headers */,
+				2836A6951AA9D8397D5C182E2D28567D /* DDFileLogger.h in Headers */,
+				3E7ABBBD41788B7C28A8B0DF05FB9502 /* DDLegacyMacros.h in Headers */,
+				8026F45B62D73A46569E5E30819A2279 /* DDLog+LOGV.h in Headers */,
+				7F1D540538D224C64E9AE0701EA15052 /* DDLog.h in Headers */,
+				46AF50CC0110611759E575A3F0BA6E1C /* DDLoggerNames.h in Headers */,
+				B7429BD245957250863FD5BE1969EA04 /* DDLogMacros.h in Headers */,
+				F2B6B7EA1E134432BAD5BFBA14F0E69A /* DDMultiFormatter.h in Headers */,
+				6DE76DC8E6BE1E82B504607563A48362 /* DDOSLogger.h in Headers */,
+				A9AF061AE8AE98F1F099287229EAD1AB /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85450168BD93A82A3B3400F933A1396E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C35CD1A73E44411D14567D7982D82CA /* Pods-NEKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D073782FA368171FBB5A74B15092A78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384DAA06B48CBA1809AE10ED2A947F88 /* core.h in Headers */,
+				5B273EF997E5A49C50562DFDD5233275 /* crypto_aead_aes256gcm.h in Headers */,
+				1437039738B878B0C97ABB5B3EFC8AFC /* crypto_aead_chacha20poly1305.h in Headers */,
+				3F0BE1D3A50BA6B008A7DC81BF5FE4EC /* crypto_auth.h in Headers */,
+				998663B187F385BC1BCC2859E19948A9 /* crypto_auth_hmacsha256.h in Headers */,
+				8F11735D0E7594135FEB8AAA2A735466 /* crypto_auth_hmacsha512.h in Headers */,
+				BF3B7EDD4EFCB417139F8A134F7AA0A7 /* crypto_auth_hmacsha512256.h in Headers */,
+				0CFD4BE7BE289FCF188E4A3271FB0E20 /* crypto_box.h in Headers */,
+				A92CF0186E09A47FEDB5FDD8BED2253F /* crypto_box_curve25519xsalsa20poly1305.h in Headers */,
+				2B04E14AFE0E3C3BEE02A76B2BA959CB /* crypto_core_hchacha20.h in Headers */,
+				F50171F1ABFFBB6D694E7D035BFAFF90 /* crypto_core_hsalsa20.h in Headers */,
+				F636FFD0E87F06A2C0E24639C578BE29 /* crypto_core_salsa20.h in Headers */,
+				7A1E3BA0138C9BE4A1C3596C79BC6578 /* crypto_core_salsa2012.h in Headers */,
+				849AACE59FA5E06B412A553AACE0F8C4 /* crypto_core_salsa208.h in Headers */,
+				163B67D435A738F85DEEE54DAD660181 /* crypto_generichash.h in Headers */,
+				DF08EA26EDD20EF10FA6F0919C70418E /* crypto_generichash_blake2b.h in Headers */,
+				9F9069B4F9A0EDB0D0A85A8874A726A0 /* crypto_hash.h in Headers */,
+				F8DB2926D0F04911CDCD06FB4D7EF397 /* crypto_hash_sha256.h in Headers */,
+				9585C20EED98135C0A236B6F94075D9C /* crypto_hash_sha512.h in Headers */,
+				0ADD7068995EA4AC8E386F6508F5D77F /* crypto_int32.h in Headers */,
+				8BAC4F8772AFC15F4D4E1536837FB17E /* crypto_int64.h in Headers */,
+				3D1CD49CCD117F90075A09387B6F60A9 /* crypto_onetimeauth.h in Headers */,
+				DDDFD72CA15D2CFDFF944851132FC95D /* crypto_onetimeauth_poly1305.h in Headers */,
+				A03E9131013675B96260F5630BBA7C3E /* crypto_pwhash.h in Headers */,
+				9ED42DE839492BDBF802CE805BF568BC /* crypto_pwhash_argon2i.h in Headers */,
+				73C0D9FEDFBA056A0F01C0436F6315B4 /* crypto_pwhash_scryptsalsa208sha256.h in Headers */,
+				8A1858C742D8641F7162A2707963984C /* crypto_scalarmult.h in Headers */,
+				64940EB3E7709ECEAF5856334533B47B /* crypto_scalarmult_curve25519.h in Headers */,
+				CCD229D49F54F8FF66E1595632AD7BB6 /* crypto_secretbox.h in Headers */,
+				68458B82921575865BFAB89E6FB9C80F /* crypto_secretbox_xsalsa20poly1305.h in Headers */,
+				18155923D8CF2E34A1ABDD300E2646B2 /* crypto_shorthash.h in Headers */,
+				3CD153ADADF540FEBA3098A4EA6CFDD7 /* crypto_shorthash_siphash24.h in Headers */,
+				E731331ADA81C1D32A4D289AEE0B0F21 /* crypto_sign.h in Headers */,
+				9C6E804E7D8101D2301CE6B98F03DE45 /* crypto_sign_ed25519.h in Headers */,
+				729A06B335528881087B4DF0E88E3956 /* crypto_sign_edwards25519sha512batch.h in Headers */,
+				19CABC072D5AAE8385D4FC87340BE213 /* crypto_stream.h in Headers */,
+				772DE635D6C3DD1FC85FDE15A0E73C16 /* crypto_stream_aes128ctr.h in Headers */,
+				415FA81FF41E8307B4E5CA365BA2281C /* crypto_stream_chacha20.h in Headers */,
+				47CBE56D1319C9AEC3842C6ECF65173B /* crypto_stream_salsa20.h in Headers */,
+				46BDAF1983567C9A8E9BD6168455D1ED /* crypto_stream_salsa2012.h in Headers */,
+				672E7014A1D9F088F9C3952901BBA3B7 /* crypto_stream_salsa208.h in Headers */,
+				1CAD7FB845B089D78EC3782D1399FDB9 /* crypto_stream_xsalsa20.h in Headers */,
+				191F4AAC0DAE26F7D47E6F7C82722A1A /* crypto_uint16.h in Headers */,
+				4DCB98A6BFD5FFE896F420B899A02E44 /* crypto_uint32.h in Headers */,
+				4784AB11E25A4876849EF7DD4B38D66D /* crypto_uint64.h in Headers */,
+				3FB3B73A5ADB822DDD7C4113E351A8AE /* crypto_uint8.h in Headers */,
+				A18D1DE48B068CE819C85F5BF54CDC5F /* crypto_verify_16.h in Headers */,
+				B20FEE9E3EFDBF387068A9AD8CBE6FC1 /* crypto_verify_32.h in Headers */,
+				CADD00BA489C6D013C8248D2014DCD80 /* crypto_verify_64.h in Headers */,
+				0C6F3394F96D7AD385CCB0CA13C828F5 /* export.h in Headers */,
+				DB2ACDDB64F1BBA457089FFCA232D533 /* NEKit-umbrella.h in Headers */,
+				B6C226A854CE04BF2060350A0868F705 /* randombytes.h in Headers */,
+				86CD3B9DCB37ED5FB5FBEBBC6F872245 /* randombytes_salsa20_random.h in Headers */,
+				D3BE446C5A2EDF35FA16AB5FF5069456 /* randombytes_sysrandom.h in Headers */,
+				D3C0FC56A5B0E101AF611843BFD469BC /* runtime.h in Headers */,
+				CD3F05AF125FB5DB8F998D116E4513DD /* sodium-lib.h in Headers */,
+				9B365DCC9DFCCC6D85BC7CC26E29F051 /* Sodium.h in Headers */,
+				AAA38F703C132D5D13E943032D989B7A /* utils.h in Headers */,
+				BCA5330529B561E2401025C72D9DC8DF /* version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97E85E49AFA71D32C1D39FFFA4E5ADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5BB2D1BAD37E6E20D6B198A22E51BD6 /* data-pool.h in Headers */,
+				781CBFCE59DBEB25EAFC976475D603B9 /* maxminddb-compat-util.h in Headers */,
+				62103438E198BF017F78C906CB94269E /* maxminddb.h in Headers */,
+				4BC7F88AEF0F04B287A1EB6B9E2F589E /* maxminddb_config.h in Headers */,
+				A8CA6054EC1338F05AC5C7A84127874A /* maxminddb_unions.h in Headers */,
+				C86D6A1F0E627DB147962EF11D460AE8 /* MMDB-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,21 +1027,79 @@
 /* Begin PBXNativeTarget section */
 		16B038CBC3D463AD9657E5FFDD09204F /* Pods-NEKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AF35C53EF8B545CAEE0F736FDBE3245 /* Build configuration list for PBXNativeTarget "Pods-NEKit_Example" */;
+			buildConfigurationList = 326976DD0F4C7C40C579FBAE1EE9DFAA /* Build configuration list for PBXNativeTarget "Pods-NEKit_Example" */;
 			buildPhases = (
-				06C661219FA1C6F0B05BFD536859A5BA /* Headers */,
-				6CAE2883A9C0423DCCF59E0509661886 /* Sources */,
-				E0A89F710125BAD52AA0635A100FB6D4 /* Frameworks */,
-				1858785A7C724DB8A3630E88C577C2F5 /* Resources */,
+				85450168BD93A82A3B3400F933A1396E /* Headers */,
+				AEF2DA4DEFCA515F8DC00A140FF80B25 /* Sources */,
+				975906FEF5FC915C78599A5336CFF290 /* Frameworks */,
+				F093CA98C3D1673F370ED633A55EE895 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B290D93535BE4632C035083B407A40ED /* PBXTargetDependency */,
+				D34B8C8E3045A653476142BBB15162C6 /* PBXTargetDependency */,
+				8BF53391832E24E70D2EA6E91B6C6BA6 /* PBXTargetDependency */,
+				FA32EDF704D194C246FE8F970B32B505 /* PBXTargetDependency */,
+				E62B9E4F3296CA97B24EF6DA914534E3 /* PBXTargetDependency */,
+				E794107852F07F44A7EBC1822EAB1AED /* PBXTargetDependency */,
 			);
 			name = "Pods-NEKit_Example";
 			productName = "Pods-NEKit_Example";
 			productReference = 0F92A9E37612E2C43D24151EDEABD588 /* Pods_NEKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40573E405040AE779B355F77177BC201 /* Yaml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8AB9D2D61B2828A179BA713DBC9F43 /* Build configuration list for PBXNativeTarget "Yaml" */;
+			buildPhases = (
+				2BAB4E6A896C2CC033406DB3093EFC15 /* Headers */,
+				45C02F8283FBACA88CD0C44E02AD72AF /* Sources */,
+				CCACBC05A57F91BA99F4DA4A50C63F90 /* Frameworks */,
+				0C7D7929DE41C7D3A6F0506F6F34AA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yaml;
+			productName = Yaml;
+			productReference = D6A7B54C73FAF335E5301A5C4B791FBF /* Yaml.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		591ECABC074328ACF141770FC8D8606F /* MMDB-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D9325DD1BA32EF02B272F4B1D2FA68 /* Build configuration list for PBXNativeTarget "MMDB-Swift" */;
+			buildPhases = (
+				A97E85E49AFA71D32C1D39FFFA4E5ADF /* Headers */,
+				88E3CA02C778FFA126A1D6BDEEBF2954 /* Sources */,
+				DF6A67032612CD014C8E564595D1BA82 /* Frameworks */,
+				3CECA7F9BA040944159D69C2935C532A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MMDB-Swift";
+			productName = "MMDB-Swift";
+			productReference = D206DC6BC2E53AB735E4765D83C10E9D /* MMDB_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				398D9830C2C4A6872C9EEC588214E124 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		653CD1446E33DBE2B68ED61DFBC05771 /* Pods-NEKit_Tests */ = {
@@ -293,20 +1123,42 @@
 		};
 		66BBD07BFD1980FD6B7C563656D9DC20 /* NEKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D597E8F07244F868286C7BC88440218B /* Build configuration list for PBXNativeTarget "NEKit" */;
+			buildConfigurationList = 4AB79D3333A33DC8A4FEB453B2A136AC /* Build configuration list for PBXNativeTarget "NEKit" */;
 			buildPhases = (
-				7D63A561195F1009D6AD70F8B0CB7CF7 /* Headers */,
-				90BC3C1476FF18AD58BF7CB1F8276128 /* Sources */,
-				897965747556E931A47275824B1A9370 /* Frameworks */,
-				89C10876607EB882B175B252A33C1889 /* Resources */,
+				9D073782FA368171FBB5A74B15092A78 /* Headers */,
+				41BD06E7927C297BC957747263B3BEA0 /* Sources */,
+				C4A892FF957DFA1390EDDB13BDFBB79F /* Frameworks */,
+				A41F4D95826583473BAB6A01F8BC8B7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20C8948C4A5DE7AF8A7AB3B0A8AD68E9 /* PBXTargetDependency */,
+				9CFAC0C8B09C521E602ED88A64CD59A1 /* PBXTargetDependency */,
+				3A66E80C840B9635D0EFF063B1B9ACD3 /* PBXTargetDependency */,
+				82A1C5C1CC993D9BE02CD98E0F916E4F /* PBXTargetDependency */,
+			);
+			name = NEKit;
+			productName = NEKit;
+			productReference = 64632A71BF7582BA5F10C77C5F8D445C /* NEKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5727A21D83A3F5362D7F996DE500B1C5 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
+			buildPhases = (
+				4554224B9FA7897EF1D7D15BF5DF8EA3 /* Headers */,
+				3239F7282B82E7660FC9B7FD448943A4 /* Sources */,
+				85D130C890A41EE223A85B2F59D220E9 /* Frameworks */,
+				4D48F20BFCD11090A2F2DDBCB0781951 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NEKit;
-			productName = NEKit;
-			productReference = 64632A71BF7582BA5F10C77C5F8D445C /* NEKit.framework */;
+			name = CocoaLumberjack;
+			productName = CocoaLumberjack;
+			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,19 +1179,23 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A238525A8E0BD56E1E4A99D69FDD2444 /* Products */;
+			productRefGroup = ECA1E030A2A916EF41E14C9FD5C850D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
+				591ECABC074328ACF141770FC8D8606F /* MMDB-Swift */,
 				66BBD07BFD1980FD6B7C563656D9DC20 /* NEKit */,
 				16B038CBC3D463AD9657E5FFDD09204F /* Pods-NEKit_Example */,
 				653CD1446E33DBE2B68ED61DFBC05771 /* Pods-NEKit_Tests */,
+				40573E405040AE779B355F77177BC201 /* Yaml */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1858785A7C724DB8A3630E88C577C2F5 /* Resources */ = {
+		0C7D7929DE41C7D3A6F0506F6F34AA05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,7 +1209,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89C10876607EB882B175B252A33C1889 /* Resources */ = {
+		3CECA7F9BA040944159D69C2935C532A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D48F20BFCD11090A2F2DDBCB0781951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41F4D95826583473BAB6A01F8BC8B7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F093CA98C3D1673F370ED633A55EE895 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,20 +1247,80 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6CAE2883A9C0423DCCF59E0509661886 /* Sources */ = {
+		3239F7282B82E7660FC9B7FD448943A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1108D833A776EAD34792E801441898 /* Pods-NEKit_Example-dummy.m in Sources */,
+				1C69814D109D97A28881862F99829B26 /* CLIColor.m in Sources */,
+				C850C5D3C65957F0C0082BB29EB326DB /* CocoaLumberjack-dummy.m in Sources */,
+				D370716608CD404EDA6487F5264002FD /* DDAbstractDatabaseLogger.m in Sources */,
+				7967FD59CDA64B71214B2B7086A2D826 /* DDASLLogCapture.m in Sources */,
+				BEF4EBB577934FFA17716D47F8D5B986 /* DDASLLogger.m in Sources */,
+				DB561750F6030F814BABE2694D2632F7 /* DDContextFilterLogFormatter.m in Sources */,
+				43601DAA266A0A83F75A00F8B2FD0DAD /* DDDispatchQueueLogFormatter.m in Sources */,
+				BD85D48B0030454BF097117510DF7976 /* DDFileLogger+Buffering.m in Sources */,
+				77BAF52973EDCED65930ECC9CA457909 /* DDFileLogger.m in Sources */,
+				EC79C1A05D55E06F6DF37EE11BECDD0B /* DDLog.m in Sources */,
+				E38B9E6C920456080C1391926FC7F6D3 /* DDLoggerNames.m in Sources */,
+				B6339A6886F35C46786C8743064A7893 /* DDMultiFormatter.m in Sources */,
+				9D64946B73901B783770885B34728DA2 /* DDOSLogger.m in Sources */,
+				7E9CBBBCCF63562059972A93C224F804 /* DDTTYLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90BC3C1476FF18AD58BF7CB1F8276128 /* Sources */ = {
+		398D9830C2C4A6872C9EEC588214E124 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB06704F3B634DF796D22F795DA24B2 /* NEKit-dummy.m in Sources */,
-				496483E03A40A2B0155CD6DC1E8769CD /* ReplaceMe.swift in Sources */,
+				6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1F292B5410B16DBF60D1F47A48216622 /* GCDAsyncSocket.m in Sources */,
+				BF0E4454B28437897BC092AE02CD0C13 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41BD06E7927C297BC957747263B3BEA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C0267784D9EE8C4BA5C871206617AF /* libsodium-iOS.a in Sources */,
+				701144BE719973A7733BC765635EF7FB /* libsodium-macOS.a in Sources */,
+				8D18099C907F47B45C6C6CB8543E72F9 /* NEKit-dummy.m in Sources */,
+				E7699167AFFD674856818DE5E31BB105 /* Resolver.swift in Sources */,
+				C40F24A66272E2930CDC0798B9806D55 /* SafeDict.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C02F8283FBACA88CD0C44E02AD72AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE660E6A2B5B8F11244E7F9A6267BA6 /* Yaml-dummy.m in Sources */,
+				FCBA91C96765A10FB68A953EA4ABC30B /* Yaml.swift in Sources */,
+				BA12DCDCB0A59C84C81E4E41DBDD0BC0 /* YAMLOperators.swift in Sources */,
+				72E20316771F46D3BC2C6195EE3D6C2E /* YAMLParser.swift in Sources */,
+				72D2FE6ACE4A1FD3DD9AD6365644A8ED /* YAMLRegex.swift in Sources */,
+				F990CE90B11FAC805BE034BB3295B5E1 /* YAMLResult.swift in Sources */,
+				0AB272514B0011B6C3EDF06B4C59CD6F /* YAMLTokenizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E3CA02C778FFA126A1D6BDEEBF2954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13316CCB607116E99236E7DECB98F46 /* data-pool.c in Sources */,
+				846FEF6309742F499DC2902F9ED4732F /* maxminddb.c in Sources */,
+				FFDC25C42979649DAC1FEB8C8C95C36B /* maxminddb_unions.c in Sources */,
+				59869DA5EA8366EFB59B7E75886C7631 /* MMDB-Swift-dummy.m in Sources */,
+				E6FCE10B446CC23F80E4D8AF4DDBDCB2 /* MMDB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF2DA4DEFCA515F8DC00A140FF80B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089CD4AD860A3822BE01537D62C067D3 /* Pods-NEKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,24 +1335,72 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		20C8948C4A5DE7AF8A7AB3B0A8AD68E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = D691A21A976C14027AEAC300554780F1 /* PBXContainerItemProxy */;
+		};
+		3A66E80C840B9635D0EFF063B1B9ACD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MMDB-Swift";
+			target = 591ECABC074328ACF141770FC8D8606F /* MMDB-Swift */;
+			targetProxy = D93E966A2E7F06C79BB44131B548224F /* PBXContainerItemProxy */;
+		};
 		499213EAE32E25A4389D0CE9D1FAB18C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-NEKit_Example";
 			target = 16B038CBC3D463AD9657E5FFDD09204F /* Pods-NEKit_Example */;
 			targetProxy = 113CB461D497399061EC7C3E25CE8729 /* PBXContainerItemProxy */;
 		};
-		B290D93535BE4632C035083B407A40ED /* PBXTargetDependency */ = {
+		82A1C5C1CC993D9BE02CD98E0F916E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yaml;
+			target = 40573E405040AE779B355F77177BC201 /* Yaml */;
+			targetProxy = C38FA1889E98E7CAEE2F4A2B8E0E796A /* PBXContainerItemProxy */;
+		};
+		8BF53391832E24E70D2EA6E91B6C6BA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 8BCBD819E2793C8CADE22D7B9E580CC3 /* PBXContainerItemProxy */;
+		};
+		9CFAC0C8B09C521E602ED88A64CD59A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 1E0DC8D77E9FAC53A53A201E8FCC00D3 /* PBXContainerItemProxy */;
+		};
+		D34B8C8E3045A653476142BBB15162C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 3D818293658A2F6907E09D67C9737CA3 /* PBXContainerItemProxy */;
+		};
+		E62B9E4F3296CA97B24EF6DA914534E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NEKit;
 			target = 66BBD07BFD1980FD6B7C563656D9DC20 /* NEKit */;
-			targetProxy = 082C1599E5AAB43DEA7E4E7CEA476886 /* PBXContainerItemProxy */;
+			targetProxy = 7467723864315E5D1AAD50BF1116319B /* PBXContainerItemProxy */;
+		};
+		E794107852F07F44A7EBC1822EAB1AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yaml;
+			target = 40573E405040AE779B355F77177BC201 /* Yaml */;
+			targetProxy = 136074688A6D8D6F227BA77ABF2275CD /* PBXContainerItemProxy */;
+		};
+		FA32EDF704D194C246FE8F970B32B505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MMDB-Swift";
+			target = 591ECABC074328ACF141770FC8D8606F /* MMDB-Swift */;
+			targetProxy = C522E47AF55811D878C6ECA21167AEB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B3877D95D69697CF0656679718828D5 /* Debug */ = {
+		0FC2EDC0AF268B6779857D7E509AD916 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEDE14721CAB9A8B6E8940BDF70F1E1B /* NEKit.debug.xcconfig */;
+			baseConfigurationReference = 4F0ABF85A6632F7049F83EC6E7D92163 /* CocoaAsyncSocket.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -419,45 +1411,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NEKit/NEKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NEKit/NEKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NEKit/NEKit.modulemap";
-				PRODUCT_MODULE_NAME = NEKit;
-				PRODUCT_NAME = NEKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0EA1E99BFE4F89736630ECBCAEFE26D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1482803FE4D07538304543F478B1B791 /* NEKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NEKit/NEKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NEKit/NEKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NEKit/NEKit.modulemap";
-				PRODUCT_MODULE_NAME = NEKit;
-				PRODUCT_NAME = NEKit;
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -469,166 +1430,7 @@
 			};
 			name = Release;
 		};
-		376D58D49A68B6183704CEDCA778765D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6141CC9CA50F779652009BDDB8C079E /* Pods-NEKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8F8814C8F604C7130324F68108F492B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98AE8BA664E60367ED545A01C51616AC /* Pods-NEKit_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9A57003E7048665211F694293CFD16E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6385541716BD8C0EE20D0E337E0B1CD3 /* Pods-NEKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -679,7 +1481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -692,11 +1494,238 @@
 			};
 			name = Debug;
 		};
-		D6F2B992291B85A54838F43CC2BD67E8 /* Release */ = {
+		2A070F2D8475F3497A69F0DF8C28BA68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D486F64E797B47D6128C660F7D11DD27 /* Pods-NEKit_Tests.release.xcconfig */;
+			baseConfigurationReference = 6385541716BD8C0EE20D0E337E0B1CD3 /* Pods-NEKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		323149D842AA2CDB37C2858E3F39452D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2889245C7694345D1DFADB383DC33E /* MMDB-Swift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMDB-Swift/MMDB-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMDB-Swift/MMDB-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMDB-Swift/MMDB-Swift.modulemap";
+				PRODUCT_MODULE_NAME = MMDB_Swift;
+				PRODUCT_NAME = MMDB_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33CA60476DA7C2556E55EB6DD40FBECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6141CC9CA50F779652009BDDB8C079E /* Pods-NEKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Example/Pods-NEKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		467E219B0680908AE4F3C2755D3D0547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E06103B896AFCC81DE576D20364096 /* Yaml.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yaml/Yaml-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
+				PRODUCT_MODULE_NAME = Yaml;
+				PRODUCT_NAME = Yaml;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DD21E95387F6FD9D254148CDBB102E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A50B8C543A00B28DF7A4F7C711B538 /* CocoaLumberjack.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6611AC93D00D51C5014776662707302C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3326FF7A527BD5F069B1501FB2B1AC0F /* MMDB-Swift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMDB-Swift/MMDB-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMDB-Swift/MMDB-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMDB-Swift/MMDB-Swift.modulemap";
+				PRODUCT_MODULE_NAME = MMDB_Swift;
+				PRODUCT_NAME = MMDB_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		729BD31F7678958147A28554DC02E7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899C2F8F5A6D6E8DB25CDCEA6F75E220 /* NEKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NEKit/NEKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NEKit/NEKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NEKit/NEKit.modulemap";
+				PRODUCT_MODULE_NAME = NEKit;
+				PRODUCT_NAME = NEKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A6A2BCE95B1876616F1622DD0B0A412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98AE8BA664E60367ED545A01C51616AC /* Pods-NEKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -708,7 +1737,133 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C6D00A9F0DECFAEA174C0DF471682BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E06980299F25FE04E4FC1A722CA1FFC /* CocoaLumberjack.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4055AE62A6DDB9ABBD669E8898009CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D486F64E797B47D6128C660F7D11DD27 /* Pods-NEKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NEKit_Tests/Pods-NEKit_Tests.modulemap";
@@ -726,14 +1881,117 @@
 			};
 			name = Release;
 		};
+		BA34459DFBDA085CDCE82D2E743258CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26372A832C3FC375130CB7FE29C57DC5 /* NEKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NEKit/NEKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NEKit/NEKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NEKit/NEKit.modulemap";
+				PRODUCT_MODULE_NAME = NEKit;
+				PRODUCT_NAME = NEKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C41B907D66126DBE2FB546C8F7A3E509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8381872C69A06442FCBDA466439E5221 /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4DD7E41BF11FDF072991399F6FFCF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD666F58FDEB33F7FC8F5CD51C97308 /* Yaml.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yaml/Yaml-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yaml/Yaml-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Yaml/Yaml.modulemap";
+				PRODUCT_MODULE_NAME = Yaml;
+				PRODUCT_NAME = Yaml;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AF35C53EF8B545CAEE0F736FDBE3245 /* Build configuration list for PBXNativeTarget "Pods-NEKit_Example" */ = {
+		27D9325DD1BA32EF02B272F4B1D2FA68 /* Build configuration list for PBXNativeTarget "MMDB-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A57003E7048665211F694293CFD16E2 /* Debug */,
-				376D58D49A68B6183704CEDCA778765D /* Release */,
+				6611AC93D00D51C5014776662707302C /* Debug */,
+				323149D842AA2CDB37C2858E3F39452D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		326976DD0F4C7C40C579FBAE1EE9DFAA /* Build configuration list for PBXNativeTarget "Pods-NEKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A070F2D8475F3497A69F0DF8C28BA68 /* Debug */,
+				33CA60476DA7C2556E55EB6DD40FBECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -741,8 +1999,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AB79D3333A33DC8A4FEB453B2A136AC /* Build configuration list for PBXNativeTarget "NEKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA34459DFBDA085CDCE82D2E743258CF /* Debug */,
+				729BD31F7678958147A28554DC02E7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5727A21D83A3F5362D7F996DE500B1C5 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD21E95387F6FD9D254148CDBB102E8 /* Debug */,
+				8C6D00A9F0DECFAEA174C0DF471682BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41B907D66126DBE2FB546C8F7A3E509 /* Debug */,
+				0FC2EDC0AF268B6779857D7E509AD916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -750,17 +2035,17 @@
 		9BB58C35B75D53E0A8A380F760D8D633 /* Build configuration list for PBXNativeTarget "Pods-NEKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F8814C8F604C7130324F68108F492B2 /* Debug */,
-				D6F2B992291B85A54838F43CC2BD67E8 /* Release */,
+				7A6A2BCE95B1876616F1622DD0B0A412 /* Debug */,
+				B4055AE62A6DDB9ABBD669E8898009CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D597E8F07244F868286C7BC88440218B /* Build configuration list for PBXNativeTarget "NEKit" */ = {
+		FE8AB9D2D61B2828A179BA713DBC9F43 /* Build configuration list for PBXNativeTarget "Yaml" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B3877D95D69697CF0656679718828D5 /* Debug */,
-				0EA1E99BFE4F89736630ECBCAEFE26D0 /* Release */,
+				467E219B0680908AE4F3C2755D3D0547 /* Debug */,
+				C4DD7E41BF11FDF072991399F6FFCF92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

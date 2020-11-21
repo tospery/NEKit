@@ -1,0 +1,6 @@
+framework module MMDB_Swift {
+  umbrella header "MMDB-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

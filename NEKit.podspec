@@ -28,16 +28,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/tospery/NEKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.requires_arc = true
+  s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'NEKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NEKit' => ['NEKit/Assets/*.png']
-  # }
+  s.source_files = 'NEKit/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'NetworkExtension'
+  s.dependency 'CocoaAsyncSocket', '~> 7.6.4'
+  s.dependency 'CocoaLumberjack', '~> 3.7.0'
+  s.dependency 'MMDB-Swift', '~> 0.5.1'
+  s.dependency 'Yaml', '~> 3.4.4'
 
 end

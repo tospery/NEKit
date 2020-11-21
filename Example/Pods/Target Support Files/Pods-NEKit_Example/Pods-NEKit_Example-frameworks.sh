@@ -197,10 +197,18 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MMDB-Swift/MMDB_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NEKit/NEKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Yaml/Yaml.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MMDB-Swift/MMDB_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NEKit/NEKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Yaml/Yaml.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
