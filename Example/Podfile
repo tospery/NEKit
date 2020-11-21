@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NEKit_Example' do
+  pod 'NEKit', :path => '../'
+
+  target 'NEKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

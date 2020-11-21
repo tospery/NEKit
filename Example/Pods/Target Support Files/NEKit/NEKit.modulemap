@@ -1,0 +1,6 @@
+framework module NEKit {
+  umbrella header "NEKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
