@@ -1,12 +1,12 @@
 PODS:
   - CocoaAsyncSocket (7.6.4)
-  - CocoaLumberjack (3.7.0):
-    - CocoaLumberjack/Core (= 3.7.0)
   - CocoaLumberjack/Core (3.7.0)
+  - CocoaLumberjack/Swift (3.7.0):
+    - CocoaLumberjack/Core
   - MMDB-Swift (0.5.1)
-  - NEKit (0.0.1):
+  - NEKit (0.0.2):
     - CocoaAsyncSocket (~> 7.6.4)
-    - CocoaLumberjack (~> 3.7.0)
+    - CocoaLumberjack/Swift (~> 3.7.0)
     - MMDB-Swift (~> 0.5.1)
     - Yaml (~> 3.4.4)
   - Yaml (3.4.4)
@@ -29,7 +29,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   MMDB-Swift: c1089703b65a3d1301fc92ff8f55d4794a569214
-  NEKit: a67e464bf013e3141199ff9eb550375e4308c5f0
+  NEKit: 27835cd3c0fed120e0c6aac35ffa9d0bdb655b0c
   Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
 
 PODFILE CHECKSUM: 661df36c79a0626b54fd1445885f62ee8528e63a
