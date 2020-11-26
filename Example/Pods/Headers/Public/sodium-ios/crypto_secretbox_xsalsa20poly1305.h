@@ -1,0 +1,1 @@
+../../../sodium-ios/sodium-ios/include/crypto_secretbox_xsalsa20poly1305.h

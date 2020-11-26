@@ -1,0 +1,1 @@
+../../../sodium-ios/sodium-ios/include/crypto_sign_ed25519.h

@@ -274,7 +274,6 @@
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/MMDB-Swift/MMDB_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/NEKit/NEKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Yaml/Yaml.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -282,7 +281,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDB_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NEKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yaml.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,1 @@
+../../../sodium-ios/sodium-ios/include/crypto_core_salsa20.h

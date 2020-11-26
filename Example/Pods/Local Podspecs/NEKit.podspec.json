@@ -16,6 +16,7 @@
     "tag": "0.0.2"
   },
   "requires_arc": true,
+  "static_framework": true,
   "swift_versions": "5.0",
   "platforms": {
     "ios": "10.0"
@@ -37,6 +38,9 @@
     ],
     "Yaml": [
       "~> 3.4.4"
+    ],
+    "sodium-ios": [
+      "~> 0.0.2"
     ]
   },
   "swift_version": "5.0"

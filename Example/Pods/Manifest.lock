@@ -8,17 +8,20 @@ PODS:
     - CocoaAsyncSocket (~> 7.6.4)
     - CocoaLumberjack/Swift (~> 3.7.0)
     - MMDB-Swift (~> 0.5.1)
+    - sodium-ios (~> 0.0.2)
     - Yaml (~> 3.4.4)
+  - sodium-ios (0.0.2)
   - Yaml (3.4.4)
 
 DEPENDENCIES:
   - NEKit (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - CocoaAsyncSocket
     - CocoaLumberjack
     - MMDB-Swift
+    - sodium-ios
     - Yaml
 
 EXTERNAL SOURCES:
@@ -29,9 +32,10 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   MMDB-Swift: c1089703b65a3d1301fc92ff8f55d4794a569214
-  NEKit: 27835cd3c0fed120e0c6aac35ffa9d0bdb655b0c
+  NEKit: b77c05948a5693566149e9a29cb9f2d0b126c029
+  sodium-ios: ebfdcc372b70d59940dc22a989f7cdd4c8a72ba2
   Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
 
-PODFILE CHECKSUM: 661df36c79a0626b54fd1445885f62ee8528e63a
+PODFILE CHECKSUM: 749709080e0223ee1d9040e57140401dff3c0034
 
 COCOAPODS: 1.9.1

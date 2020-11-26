@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.requires_arc = true
+  s.static_framework = true
   s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
 
@@ -39,5 +40,6 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack/Swift', '~> 3.7.0'
   s.dependency 'MMDB-Swift', '~> 0.5.1'
   s.dependency 'Yaml', '~> 3.4.4'
+  s.dependency 'sodium-ios', '~> 0.0.2'
 
 end

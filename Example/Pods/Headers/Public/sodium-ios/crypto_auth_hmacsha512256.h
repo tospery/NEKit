@@ -1,0 +1,1 @@
+../../../sodium-ios/sodium-ios/include/crypto_auth_hmacsha512256.h

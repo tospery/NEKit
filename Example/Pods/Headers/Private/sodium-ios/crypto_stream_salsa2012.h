@@ -1,0 +1,1 @@
+../../../sodium-ios/sodium-ios/include/crypto_stream_salsa2012.h
