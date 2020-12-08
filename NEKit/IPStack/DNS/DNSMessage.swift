@@ -18,7 +18,7 @@ open class DNSMessage {
     open var nameservers: [DNSResource] = []
     open var addtionals: [DNSResource] = []
 
-    var payload: Data!
+    public var payload: Data!
 
     var bytesLength: Int {
         var len = 12 + queries.reduce(0) {
@@ -51,7 +51,7 @@ open class DNSMessage {
 
     init() {}
 
-    init?(payload: Data) {
+    public init?(payload: Data) {
         self.payload = payload
         let scanner = BinaryDataScanner(data: payload, littleEndian: false)
 
@@ -109,7 +109,7 @@ open class DNSMessage {
 
     }
 
-    func buildMessage() -> Bool {
+    public func buildMessage() -> Bool {
         payload = Data(count: bytesLength)
         if transactionID == 0 {
             transactionID = UInt16(arc4random_uniform(UInt32(UInt16.max)))
@@ -289,7 +289,7 @@ open class DNSResource {
         self.nameBytesLength = name.utf8.count + 2
     }
 
-    static func ARecord(_ name: String, TTL: UInt32 = 300, address: IPAddress) -> DNSResource {
+    public static func ARecord(_ name: String, TTL: UInt32 = 300, address: IPAddress) -> DNSResource {
         return DNSResource(name: name, type: .a, klass: .internet, TTL: TTL, data: address.dataInNetworkOrder)
     }
 
