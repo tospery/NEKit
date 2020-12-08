@@ -85,8 +85,11 @@ open class DNSMessage {
         let addtionalCount = scanner.read16()!
 
         for _ in 0..<queryCount {
-            queries.append(DNSQuery(payload: payload, offset: scanner.position, base: 0)!)
-            scanner.advance(by: queries.last!.bytesLength)
+            let dnsQuery = DNSQuery(payload: payload, offset: scanner.position, base: 0)
+            if dnsQuery != nil {
+                queries.append(dnsQuery!)
+                scanner.advance(by: queries.last!.bytesLength)
+            }
         }
 
         for _ in 0..<answerCount {
@@ -272,7 +275,10 @@ open class DNSResource {
     public let data: Data
 
     let nameBytesLength: Int
-
+    
+    //add by zuo 理论为4字节包含了ip信息的东东，要替换目标ip的位置，要好好找找
+    var rDataRange = Range(0...1)
+    
     init(name: String, type: DNSType = .a, klass: DNSClass = .internet, TTL: UInt32 = 300, data: Data) {
         self.name = name
         self.type = type
@@ -307,6 +313,8 @@ open class DNSResource {
         self.TTL = scanner.read32()!
         dataLength = scanner.read16()!
         self.data = payload.subdata(in: scanner.position..<scanner.position+Int(dataLength))
+        //add by zuo
+        rDataRange = scanner.position..<scanner.position+Int(dataLength)
     }
 
     var bytesLength: Int {
